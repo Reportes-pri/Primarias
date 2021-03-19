@@ -1,13 +1,19 @@
-import { Input, Modal } from "antd";
+import { Input, Modal, Select } from "antd";
 import { useState } from "react";
 import { Col, FormGroup, Row } from "reactstrap";
+import Municipios from "../datos/Municipios.json";
+import Acapulco from "../datos/AcapulcodeJuárez.json";
+
+const { Option } = Select;
 
 export default function Nuevo({ visible, setVisible }) {
 
+    //modal
     const [loading, setLoading] = useState(false);
+    const [localidades, setLocalidades] = useState(null);
 
-    
 
+    //formulario
     const [np, setNp] = useState({ value: "", error: "" });
     const [anio, setAnio] = useState({ value: "", error: "" });
     const [region, setRegion] = useState({ value: "", error: "" });
@@ -23,10 +29,23 @@ export default function Nuevo({ visible, setVisible }) {
 
     const guardar = () => {
 
+
     }
 
     const cerrarLimpiar = () => {
         setVisible(false);
+    }
+
+    const cambiarMunicipio = (e) => {
+        switch (e) {
+            case "Acapulco de Juárez":
+                setLocalidades(Acapulco);
+                break;
+            default:
+                setLocalidades(null);
+                break;
+        }
+        setMunicipio(e);
     }
 
     return (
@@ -106,16 +125,57 @@ export default function Nuevo({ visible, setVisible }) {
             <Row>
                 <Col>
                     <FormGroup>
-
                         <label>Municipio</label>
-                        <Input size="large" style={{ width: "100%" }} />
+                        <Select
+                            showSearch
+                            size="large"
+                            style={{ width: "100%" }}
+                            placeholder="Escribe un municipio"
+                            optionFilterProp="children"
+                            filterOption={(input, option) =>
+                                option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                            }
+                            filterSort={(optionA, optionB) =>
+                                optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                            }
+                            onChange={cambiarMunicipio}
+                            value={municipio}
+                        >
+                            {
+                                Municipios.map((municipio, index) => {
+                                    return (
+                                        <Option key={index} value={municipio.label}>{municipio.label}</Option>
+                                    );
+                                })
+                            }
+                        </Select>
                     </FormGroup>
                 </Col>
 
                 <Col>
                     <FormGroup>
                         <label>Localidad</label>
-                        <Input size="large" style={{ width: "100%" }} type="number" />
+                        <Select
+                            showSearch
+                            size="large"
+                            style={{ width: "100%" }}
+                            placeholder="Escribe un municipio"
+                            optionFilterProp="children"
+                            filterOption={(input, option) =>
+                                option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                            }
+                            filterSort={(optionA, optionB) =>
+                                optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                            }
+                        >
+                            {
+                                localidades !== null && localidades.map((localidad, index) => {
+                                    return (
+                                        <Option key={index} value={localidad.nombre}>{localidad.nombre}</Option>
+                                    );
+                                })
+                            }
+                        </Select>
                     </FormGroup>
                 </Col>
             </Row>
