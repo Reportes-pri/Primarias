@@ -42,7 +42,7 @@ export default function Index() {
     const consultarDatos = async () => {
         try {
             const ref = db.collection("escuelas");
-            const snapshot = await ref.orderBy("municipio").startAt("CHIL").endAt("CHIL\uf8ff").orderBy("localidad").startAt("ALCO").endAt("ALCO\uf8ff").get();
+            const snapshot = await ref.get();
             if (snapshot.empty) {
                 setLoading(false);
                 alert("no hay datos");
