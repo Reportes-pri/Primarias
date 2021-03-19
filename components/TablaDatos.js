@@ -2,7 +2,7 @@
 export default function TablaDatos({ datos }) {
 
     return (
-        <table className="table  table-striped table-responsive" style={{width: "100%"}}>
+        <table className="table  table-striped table-responsive" style={{width: "100%"}} id="tblDatos">
             <thead style={{textAlign: "center", backgroundColor: "#007bff", color: "white"}}>
                 <tr>
                     <th>NP</th>

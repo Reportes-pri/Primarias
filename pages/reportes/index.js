@@ -11,6 +11,7 @@ import ModalNuevo from "../../components/ModalNuevo";
 
 import Municipios from "../../datos/Municipios.json";
 import Acapulco from "../../datos/AcapulcodeJuárez.json";
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 
 const { Option } = Select;
 
@@ -178,14 +179,29 @@ export default function Index() {
                         </FormGroup>
                     </Col>
 
-                    <Col md="3">
+                    <Col md="2">
                         <FormGroup>
                             <label className="text-white">.</label><br />
                             <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar</Button>
                         </FormGroup>
+
+                    </Col>
+
+                    <Col md="2">
+                        <FormGroup>
+                            <label className="text-white" >.</label><br></br>
+                            <ReactHTMLTableToExcel
+                                id="test-table-xls-button"
+                                className="btn btn-success"
+                                table="tblDatos"
+                                filename="Reporte"
+                                sheet="tablexls"
+                                buttonText="Exportar Excel" />
+                        </FormGroup>
+
+
                     </Col>
                 </Row>
-
                 <Row className="mt-5">
                     <Col md="12">
                         <TablaDatos datos={datos} />
