@@ -1,16 +1,70 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(153, 5, 5, 0.301);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.site-layout-sub-header-background {
+  background: #fff;
 }
 
-* {
-  box-sizing: border-box;
+.site-layout-background {
+  background: #fff;
 }
+
+/*layout admin*/
+
+.topbar {
+	padding: 0 rem(30);
+	min-height: 64px;
+	height: 64px;
+	border-bottom: 1px solid #ccc;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+
+.dropdown {
+	padding-right: 15px;
+	position: relative;
+	cursor: pointer;
+}
+.dropdown::after {
+	opacity: 0.5;
+	color: #595c97;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -2px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	content: '';
+	border-top: 0.3em solid;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+}
+.dropdown:hover {
+	color: blue;
+}
+.dropdown:hover::after {
+	color: #ccc;
+}
+.avatar {
+  background-color: orange !important;
+}
+[data-kit-theme='dark'] .avatar {
+	background:#ccc !important;
+}
+.logoHospital {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px;
+  }
+  

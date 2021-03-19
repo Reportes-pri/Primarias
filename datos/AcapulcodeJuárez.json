@@ -1,0 +1,1947 @@
+[
+    {
+        "municipio": "001",
+        "clave": "120010082",
+        "nombre": "Apalani"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010083",
+        "nombre": "Apanhuac (Apanguaque)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010086",
+        "nombre": "Barrio Nuevo de los Muertos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010090",
+        "nombre": "Campanario"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010098",
+        "nombre": "La Concepción"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010099",
+        "nombre": "Las Cruces de Cacahuatepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010103",
+        "nombre": "Espinalillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010107",
+        "nombre": "Huamuchitos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010131",
+        "nombre": "Las Parotas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010142",
+        "nombre": "Pochotlaxco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010145",
+        "nombre": "Pueblo Nuevo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010193",
+        "nombre": "El Embarcadero (Las Totolas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010351",
+        "nombre": "Candelilla (Las Palmitas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010353",
+        "nombre": "Cabeza de Tigre"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010355",
+        "nombre": "Tasajeras"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010366",
+        "nombre": "La Calera Dos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010371",
+        "nombre": "Los Coyotes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010388",
+        "nombre": "La Herradura"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010398",
+        "nombre": "Los Limones"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010408",
+        "nombre": "El Manglito"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010426",
+        "nombre": "Piedra Rajada"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010431",
+        "nombre": "El Podrido"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010433",
+        "nombre": "Punta de Casa"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010446",
+        "nombre": "Varadero de Tres Palos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010464",
+        "nombre": "Arroyo Verde"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010479",
+        "nombre": "Las Marcelas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010587",
+        "nombre": "Rancho las Marías"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010604",
+        "nombre": "El Cerrito (Colonia el Cerrito)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010609",
+        "nombre": "Colonia Seis de Agosto"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010614",
+        "nombre": "Huerta Francisca Dimayuga Mendoza"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010618",
+        "nombre": "Maguey Uno"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010626",
+        "nombre": "Colonia Villa Guerrero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010637",
+        "nombre": "Colonia Ampliación los Lirios Parte Alta"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010665",
+        "nombre": "La Lomita [Restaurante]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010691",
+        "nombre": "El Rincón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010694",
+        "nombre": "Rancho el Tamarindillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010695",
+        "nombre": "El Progreso de Cacahuatepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010696",
+        "nombre": "Colonia Nueva de San Rafael"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010710",
+        "nombre": "San José"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010713",
+        "nombre": "Colonia Manuel Añorve Baños"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010727",
+        "nombre": "Huerta David Jiménez"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010735",
+        "nombre": "Colonia Santa Lucía"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010740",
+        "nombre": "Acapulco 2000"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010077",
+        "nombre": "Agua del Perro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010078",
+        "nombre": "Aguas Calientes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010079",
+        "nombre": "Alto del Camarón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010080",
+        "nombre": "Amatepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010081",
+        "nombre": "Amatillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010085",
+        "nombre": "Barra Vieja"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010087",
+        "nombre": "El Bejuco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010088",
+        "nombre": "Cacahuatepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010089",
+        "nombre": "La Calera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010091",
+        "nombre": "El Cantón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010092",
+        "nombre": "Carabalí"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010093",
+        "nombre": "El Carrizo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010095",
+        "nombre": "Cerro de Piedra"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010097",
+        "nombre": "Colonia Guerrero (Los Guajes)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010101",
+        "nombre": "Dos Arroyos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010102",
+        "nombre": "Ejido Nuevo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010104",
+        "nombre": "La Estación"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010105",
+        "nombre": "Garrapatas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010106",
+        "nombre": "Huajintepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010108",
+        "nombre": "Los Ilamos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010109",
+        "nombre": "Kilómetro 21"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010110",
+        "nombre": "Kilómetro 30"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010111",
+        "nombre": "Kilómetro 34"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010112",
+        "nombre": "Kilómetro 39"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010113",
+        "nombre": "Kilómetro 40"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010114",
+        "nombre": "Kilómetro 42 (Juan N. Álvarez)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010115",
+        "nombre": "Kilómetro 45"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010116",
+        "nombre": "Kilómetro Cuarenta y Ocho"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010117",
+        "nombre": "Laguna del Quemado"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010119",
+        "nombre": "Lomas del Aire"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010120",
+        "nombre": "Loma Larga"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010121",
+        "nombre": "Lomas de Chapultepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010124",
+        "nombre": "Las Marías"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010125",
+        "nombre": "El Metlapil"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010126",
+        "nombre": "Oaxaquillas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010127",
+        "nombre": "Las Ollitas (Las Joyitas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010128",
+        "nombre": "Los Órganos de Juan R. Escudero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010129",
+        "nombre": "Los Órganos de San Agustín (El Quemado)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010130",
+        "nombre": "Pablo Galeana (Coacoyular)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010132",
+        "nombre": "Parotillas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010135",
+        "nombre": "El Pelillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010137",
+        "nombre": "Piedra Imán"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010140",
+        "nombre": "Playones de San Isidro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010141",
+        "nombre": "Las Plazuelas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010143",
+        "nombre": "La Providencia"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010144",
+        "nombre": "Pueblo Madero (El Playón)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010147",
+        "nombre": "El Rincón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010149",
+        "nombre": "Sabanillas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010150",
+        "nombre": "Salsipuedes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010151",
+        "nombre": "El Salto"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010152",
+        "nombre": "San Antonio"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010153",
+        "nombre": "San Isidro Gallinero (El Gallinero)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010154",
+        "nombre": "San José Cacahuatepec"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010155",
+        "nombre": "Lomas de San Juan"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010156",
+        "nombre": "San Martín el Jovero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010157",
+        "nombre": "San Pedro Cacahuatepec (Vereda de Amatillo)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010158",
+        "nombre": "San Pedro las Playas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010160",
+        "nombre": "La Sierrita"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010161",
+        "nombre": "San José Tasajeras"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010162",
+        "nombre": "Teniente José Azueta (Río Papagayo)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010163",
+        "nombre": "La Testaruda"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010164",
+        "nombre": "Texca"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010165",
+        "nombre": "Las Tortolitas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010167",
+        "nombre": "Tuncingo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010169",
+        "nombre": "El Veladero (Veladero Morelos)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010171",
+        "nombre": "Venta Vieja"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010173",
+        "nombre": "Xaltianguis"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010174",
+        "nombre": "Xolapa"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010177",
+        "nombre": "El Zapote"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010197",
+        "nombre": "Kilómetro 22"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010208",
+        "nombre": "Paraje de la Zorra"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010214",
+        "nombre": "Puente de Fierro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010219",
+        "nombre": "Paso Texca"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010242",
+        "nombre": "Bella Vista Papagayo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010293",
+        "nombre": "Villa Guerrero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010297",
+        "nombre": "El Arenal"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010338",
+        "nombre": "Las Joyas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010343",
+        "nombre": "Las Chanecas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010349",
+        "nombre": "San Andrés Playa Encantada (El Podrido)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010354",
+        "nombre": "Cacahuate"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010377",
+        "nombre": "10 de Abril"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010390",
+        "nombre": "Paraíso de la Laguna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010393",
+        "nombre": "Kilómetro Treinta y Dos (Colonia la Unión)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010394",
+        "nombre": "Kilómetro Treinta y Tres"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010395",
+        "nombre": "Kilómetro Treinta y Cinco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010409",
+        "nombre": "Los Mayos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010411",
+        "nombre": "Nicolás Bravo (Zanja del Teniente)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010416",
+        "nombre": "El Ranchito (Las Palmitas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010432",
+        "nombre": "Poza Verde (Pozo Verde)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010436",
+        "nombre": "El Salitre"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010448",
+        "nombre": "La Vista Alegre"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010454",
+        "nombre": "Colonia Mangos (El Quemado)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010457",
+        "nombre": "Rascasola"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010459",
+        "nombre": "Vista Hermosa"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010461",
+        "nombre": "El Libramiento (La Gasera)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010467",
+        "nombre": "Josefina de la O"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010473",
+        "nombre": "La Cámara"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010478",
+        "nombre": "Nueva Frontera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010490",
+        "nombre": "Los Triángulos [Granjas]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010491",
+        "nombre": "Agua Zarca de la Peña"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010493",
+        "nombre": "La Arena"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010494",
+        "nombre": "Colonia el Puente de Texca"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010497",
+        "nombre": "El Mamey"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010502",
+        "nombre": "Colonia Loma Larga (El Basurero)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010503",
+        "nombre": "Colonia Nueva Luz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010504",
+        "nombre": "Colonia Praderas de Guadalupe"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010505",
+        "nombre": "Colonia Coheteros"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010507",
+        "nombre": "Colonia Donaciano Rivera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010561",
+        "nombre": "Colonia Dieciséis de Noviembre"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010562",
+        "nombre": "Colonia Ladrillera (La Pilastra)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010563",
+        "nombre": "Colonia la Esperanza"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010566",
+        "nombre": "Colonia Miguel Terrazas Rivera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010568",
+        "nombre": "Colonia Nueva Generación"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010570",
+        "nombre": "Colonia Rubén Figueroa Alcocer"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010573",
+        "nombre": "Colonia Vista Hermosa de las Flores"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010574",
+        "nombre": "Colonia la Frontera Aguacatillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010582",
+        "nombre": "Colonia Monte Sinaí"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010605",
+        "nombre": "Colonia Acapulco Dos Mil"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010607",
+        "nombre": "Colonia Ángel Heladio Aguirre Rivero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010608",
+        "nombre": "Colonia Mariano Molina"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010611",
+        "nombre": "Colonia Valle Encantado"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010658",
+        "nombre": "Colonia Alborada"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010663",
+        "nombre": "Tunzingo [Unidad Habitacional]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010674",
+        "nombre": "Granjas de Campo Rojo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010683",
+        "nombre": "Colonia Nueva Revolución"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010686",
+        "nombre": "Huerta Carmela Rivera Terrazas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010697",
+        "nombre": "Colonia Democrática"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010699",
+        "nombre": "Lucio Cabañas [Campamento Popular]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010700",
+        "nombre": "Colonia San Isidro del Progreso"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010712",
+        "nombre": "Paseo de la Laguna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010714",
+        "nombre": "Colonia la Gloria"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010730",
+        "nombre": "Mirita de los Reyes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010001",
+        "nombre": "Acapulco de Juárez"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010166",
+        "nombre": "Tres Palos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010210",
+        "nombre": "Los Planes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010216",
+        "nombre": "El Ranchito"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010217",
+        "nombre": "El Reparito"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010329",
+        "nombre": "El Zoyamichal"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010331",
+        "nombre": "Campo Rojo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010332",
+        "nombre": "Las Mariquitas (Atascadero)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010356",
+        "nombre": "Zoyamiche"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010360",
+        "nombre": "Banco de Oro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010365",
+        "nombre": "El Calahue (Rancho San Antonio)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010383",
+        "nombre": "La Granja (Las Marcelas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010387",
+        "nombre": "La Hacienda (La Hacienda de Papagayo)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010396",
+        "nombre": "Kilómetro Treinta y Seis"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010400",
+        "nombre": "El Limón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010401",
+        "nombre": "El Limón Cinco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010404",
+        "nombre": "Loma Larga Tres"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010407",
+        "nombre": "El Maguey"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010413",
+        "nombre": "Rancho Olea"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010420",
+        "nombre": "Paso de la Canastilla"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010456",
+        "nombre": "El Potrero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010458",
+        "nombre": "El Mango Solo (Las Tranquillas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010460",
+        "nombre": "Arroyo el Ejido"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010462",
+        "nombre": "Agropecuaria"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010463",
+        "nombre": "Aguacatillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010465",
+        "nombre": "La Canaleja"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010466",
+        "nombre": "Isla la Roqueta"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010468",
+        "nombre": "Juan de la Luz Morales"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010470",
+        "nombre": "El Paraíso"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010472",
+        "nombre": "Tres Vidas Acapulco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010474",
+        "nombre": "El Chorro (La Cascada)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010475",
+        "nombre": "Fabián Calixto"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010476",
+        "nombre": "Jesús Hernández"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010477",
+        "nombre": "Laguna la Testaruda"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010481",
+        "nombre": "La Ciénega"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010483",
+        "nombre": "La Granja [Chivería]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010484",
+        "nombre": "La Poza del Cajón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010487",
+        "nombre": "El Zapote (Kilómetro Trece)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010492",
+        "nombre": "Ángel Castro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010495",
+        "nombre": "Granja de los Godínez (Las Granjas)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010496",
+        "nombre": "El Jícaro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010499",
+        "nombre": "La Palmita"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010500",
+        "nombre": "El Salto [Parque Industrial de Guerrero]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010509",
+        "nombre": "Las Bugambilias"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010510",
+        "nombre": "Rancho De la O Rojas (Rancho Marlín)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010511",
+        "nombre": "Huerta Darío Orbe (La India)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010513",
+        "nombre": "Colonia la Voz de la Montaña Segunda Sección"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010514",
+        "nombre": "Colonia San Miguelito (Tierra Blanca)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010517",
+        "nombre": "Colonia Ampliación la Mica"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010520",
+        "nombre": "Colonia Caudillos del Sur"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010523",
+        "nombre": "Colonia Piedra de Oro (Colonia Roca de Oro)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010524",
+        "nombre": "Colonia Ampliación Miguel de la Madrid"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010525",
+        "nombre": "Colonia Nueva Jerusalem"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010526",
+        "nombre": "El Coloso Uno (Hacienda el Coloso)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010527",
+        "nombre": "Poza del Barro [Tabiquería]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010528",
+        "nombre": "Huerta los Reyes"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010529",
+        "nombre": "Rancho Santo Domingo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010530",
+        "nombre": "Varadero del Plan de los Amates"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010531",
+        "nombre": "Colonia Mirador el Coloso"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010533",
+        "nombre": "Unidad Habitacional Cumbres de Llano Largo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010534",
+        "nombre": "Colonia los Manantiales"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010535",
+        "nombre": "Colonia Cinco de Mayo Parte Alta"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010537",
+        "nombre": "Colonia Melchor Ocampo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010538",
+        "nombre": "Colonia Ampliación Libertad"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010539",
+        "nombre": "Colonia Veinte de Noviembre (Fraccionamiento las Dalias)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010540",
+        "nombre": "Huerta Juana de la O"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010541",
+        "nombre": "Huerta Jesús Pillano Mejía"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010542",
+        "nombre": "Huerta Anastacio Cruz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010543",
+        "nombre": "Rancho Jesús Espinoza Palma"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010544",
+        "nombre": "Ampliación Colonia Generación Dos Mil"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010546",
+        "nombre": "Huerta Darío Orbe (La Colonia)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010548",
+        "nombre": "El Ocotillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010552",
+        "nombre": "Llano Largo Uno"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010554",
+        "nombre": "Alta Jardín Mangos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010555",
+        "nombre": "Alta Joya"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010556",
+        "nombre": "Ampliación del PRI (Ampliación del PRI Parte Alta)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010557",
+        "nombre": "La Casa del Anciano"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010558",
+        "nombre": "Colonia Ampliación Membrillo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010560",
+        "nombre": "Colonia Independencia"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010564",
+        "nombre": "Colonia Dr Ricardo Morlet Sutter"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010569",
+        "nombre": "Colonia Reforma Agraria"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010571",
+        "nombre": "Colonia Tepeyac"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010572",
+        "nombre": "Colonia por Guerrero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010575",
+        "nombre": "Huerta Gilberto Luna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010577",
+        "nombre": "Huerta César Mendoza Rivera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010578",
+        "nombre": "Huerta Eusebio Sequeida"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010580",
+        "nombre": "Huerta Guillermo Robles Calvo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010581",
+        "nombre": "Huerta Marcial Contreras"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010583",
+        "nombre": "Ramona De la O Muñoz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010584",
+        "nombre": "Rancho el Molino"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010585",
+        "nombre": "Rancho Félix Lorenzo Martínez"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010586",
+        "nombre": "Rancho Juan Muñoz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010588",
+        "nombre": "Rancho María Angelina Carmona"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010589",
+        "nombre": "Rancho Roberto Murillo Uno"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010590",
+        "nombre": "Huerta Baltazar Hernández Agatón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010591",
+        "nombre": "Huerta Marcial Muñoz Silva"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010592",
+        "nombre": "Huerta Ignacio Cuevas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010594",
+        "nombre": "Huerta Mario Salazar"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010596",
+        "nombre": "Huerta Ricardo Mendoza"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010597",
+        "nombre": "Huerta Ubaldo Murillo Balanzar"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010598",
+        "nombre": "Rancho Domingo Villanueva"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010599",
+        "nombre": "El Albergue"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010601",
+        "nombre": "Jorge Campos [Campo de Fut-Bol]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010602",
+        "nombre": "Campo de Tiro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010603",
+        "nombre": "Los Campos Manzo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010606",
+        "nombre": "Colonia Ampliación San Isidro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010610",
+        "nombre": "Colonia SEMARNAP"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010612",
+        "nombre": "Colonia Zarahemla"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010613",
+        "nombre": "El Uno [Huerta]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010615",
+        "nombre": "Huerta Gilberto Zequeida Viviano"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010616",
+        "nombre": "Pilita [Huerta]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010617",
+        "nombre": "Huerta Teódulo Calixto"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010619",
+        "nombre": "El Puente"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010620",
+        "nombre": "Rancho Don Arnulfo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010621",
+        "nombre": "Rancho Eusebio Sequeida Ozuna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010624",
+        "nombre": "Cerro Cumbre [Antenas]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010625",
+        "nombre": "Ampliación Praderas de Costa Azul"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010627",
+        "nombre": "Barranca Honda"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010628",
+        "nombre": "Rancho el Capricho"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010629",
+        "nombre": "Colonia CNC Parte Alta"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010630",
+        "nombre": "Club Residencial las Brisas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010631",
+        "nombre": "Club Residencial la Cima"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010632",
+        "nombre": "Colonia Alta de Costa Azul"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010633",
+        "nombre": "Colonia Altos el Mirador"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010634",
+        "nombre": "Colonia Altos de Miramar"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010635",
+        "nombre": "Colonia Alta Generación"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010636",
+        "nombre": "Colonia Amalia Solórzano"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010638",
+        "nombre": "Colonia Ampliación Praderas de Costa Azul Uno"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010639",
+        "nombre": "Colonia Ampliación Roberto Esperón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010640",
+        "nombre": "Colonia Ampliación Simón Bolívar"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010642",
+        "nombre": "Colonia el Pochote"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010643",
+        "nombre": "Colonia Esmeralda"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010645",
+        "nombre": "Colonia Nuevo Puerto Marquez"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010646",
+        "nombre": "Colonia Paraíso Escondido"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010647",
+        "nombre": "Colonia Plan de Ayala"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010649",
+        "nombre": "Colonia Veinticuatro de Octubre"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010650",
+        "nombre": "Colonia Vicente Guerrero"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010651",
+        "nombre": "Colonia Villa Guadalupe"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010652",
+        "nombre": "Colonia Yoloxóchitl"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010653",
+        "nombre": "El Cayaco"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010654",
+        "nombre": "Cumbres de Llano Largo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010655",
+        "nombre": "Granjas Armando Espinoza Pineda"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010656",
+        "nombre": "Plan de los Amates"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010657",
+        "nombre": "Abot Martínez Ruiz (Glomar)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010659",
+        "nombre": "Colonia Juan Salgado Tenorio"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010660",
+        "nombre": "Colonia Tamarindos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010661",
+        "nombre": "Huerta de Abundio Espinoza de la O"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010662",
+        "nombre": "Huerta Lázaro García Vallane"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010664",
+        "nombre": "Rancho Regadío"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010666",
+        "nombre": "Agua Salada [Estación Hidrométrica]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010667",
+        "nombre": "Arroyo Muerto"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010668",
+        "nombre": "Caparrosa"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010669",
+        "nombre": "La Casa de Barro"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010670",
+        "nombre": "La Ceibita"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010671",
+        "nombre": "Cerro Pelón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010672",
+        "nombre": "Ciénega del Cuastololote"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010673",
+        "nombre": "Granja Camaronera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010675",
+        "nombre": "Huerta de Alejandro Alarcón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010676",
+        "nombre": "El Mogollón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010677",
+        "nombre": "El Monasterio"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010678",
+        "nombre": "Palo Dulce"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010679",
+        "nombre": "Plan del Pollo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010680",
+        "nombre": "Rancho Alfonso Catalán"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010681",
+        "nombre": "Rancho Campo Rojo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010682",
+        "nombre": "Rancho la Guadalupana"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010684",
+        "nombre": "Fraccionamiento Arenas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010685",
+        "nombre": "General Leonel Villalobos Chávez"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010687",
+        "nombre": "Huerta Marcelino Flores Bailón"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010688",
+        "nombre": "Joel Mendoza Maciel (Rancho del Regidor)"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010689",
+        "nombre": "José Francisco Martínez Clark"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010690",
+        "nombre": "Loma Piedra Rayada"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010692",
+        "nombre": "Terreno de Florentino Comino Cruz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010693",
+        "nombre": "El Zapote"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010698",
+        "nombre": "Ciudad San Agustín"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010701",
+        "nombre": "Colonia Camino al Cielo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010702",
+        "nombre": "Colonia el Pedregal"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010703",
+        "nombre": "Colonia San Agustín"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010704",
+        "nombre": "Colonia Puesta del Sol"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010705",
+        "nombre": "Convento Monte San Alfonso"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010706",
+        "nombre": "Fraccionamiento Campestre de la Laguna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010707",
+        "nombre": "Residencial Paraíso Diamante"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010708",
+        "nombre": "El Vado"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010709",
+        "nombre": "Kilómetro 47"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010711",
+        "nombre": "Los Atascaderos"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010715",
+        "nombre": "El Paraíso"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010716",
+        "nombre": "Santa Elena"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010717",
+        "nombre": "Las Calderas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010718",
+        "nombre": "Barranca Lima"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010719",
+        "nombre": "Joyas de San Agustín"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010720",
+        "nombre": "Agua Viva"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010721",
+        "nombre": "Rancho la Esperanza"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010722",
+        "nombre": "Las Cieneguitas Cuatas"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010723",
+        "nombre": "Providencia Mágica"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010724",
+        "nombre": "Lomas del Pedregal"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010725",
+        "nombre": "La Huerta"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010726",
+        "nombre": "Huerta la Bugambilia"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010728",
+        "nombre": "Huerta Margarito Jiménez J."
+    },
+    {
+        "municipio": "001",
+        "clave": "120010729",
+        "nombre": "Huerta Medardo Olea Gerardo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010731",
+        "nombre": "Rancho la Luna"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010732",
+        "nombre": "Gaspar Sequeida"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010733",
+        "nombre": "Huerta Ubaldo Muñoz"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010734",
+        "nombre": "Colonia Guadalupe"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010736",
+        "nombre": "Rancho Viejo"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010737",
+        "nombre": "Colonia Tabiquera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010738",
+        "nombre": "Huerta Patricia Sánchez Rivera"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010739",
+        "nombre": "Huerta el Naranjal"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010741",
+        "nombre": "El Cajelito"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010742",
+        "nombre": "Ramón Pedroza"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010743",
+        "nombre": "Hacienda Renacer"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010744",
+        "nombre": "Parada los Charros"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010745",
+        "nombre": "Loma de Chivería"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010746",
+        "nombre": "Marcelino Ocampo [Colonia]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010747",
+        "nombre": "Amado Martínez Hernández [Huerta]"
+    },
+    {
+        "municipio": "001",
+        "clave": "120010748",
+        "nombre": "Juana Martínez Morales [Huerta]"
+    }
+]
