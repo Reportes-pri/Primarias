@@ -1,19 +1,14 @@
 import { useEffect, useState } from "react";
 import { appFirebase } from "../../configuracion/firebase";
 import { useRouter } from "next/router";
-import { Col, FormGroup, Row, Spinner } from "reactstrap";
+import { Col, Row, Spinner } from "reactstrap";
 import Layout from "../../components/layout";
-import { PageHeader, Button, Input, Select } from "antd";
+import { PageHeader, Button } from "antd";
 import TablaDatos from "../../components/TablaDatos";
-import { db } from "../../configuracion/firebase";
-
 import ModalNuevo from "../../components/ModalNuevo";
-
-import Municipios from "../../datos/Municipios.json";
-import Acapulco from "../../datos/AcapulcodeJuárez.json";
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import Filtro from "../../components/Filtro";
 
-const { Option } = Select;
 
 export default function Index() {
 
@@ -21,10 +16,8 @@ export default function Index() {
 
     const [loading, setLoading] = useState(true);
     const [datos, setDatos] = useState(null);
-    const [localidades, setLocalidades] = useState([]);
-    const [municipio, SetMunicipio] = useState("");
-
-    const [region, setRegion] = useState("");
+    const [escuelas, setEscuelas] = useState(0);
+    const [alumnos, setAlumnos] = useState(0);
 
     const [visibilidadModal, setVisibilidadModal] = useState(false);
 
@@ -37,40 +30,6 @@ export default function Index() {
             }
         });
     }, []);
-
-
-    const consultarDatos = async () => {
-        try {
-            const ref = db.collection("escuelas");
-            const snapshot = await ref.get();
-            if (snapshot.empty) {
-                setLoading(false);
-                alert("no hay datos");
-            }
-            else {
-                setDatos(snapshot);
-
-                snapshot.forEach(doc => {
-                    console.log(doc.data().CCT);
-                })
-                setLoading(false);
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    const cambiarMunicipio = (e) => {
-        switch (e) {
-            case "Acapulco de Juárez":
-                setLocalidades(Acapulco);
-                break;
-            default:
-                setLocalidades(null);
-                break;
-        }
-        SetMunicipio(e);
-    }
 
 
     if (loading) {
@@ -95,115 +54,30 @@ export default function Index() {
             >
                 <ModalNuevo visible={visibilidadModal} setVisible={setVisibilidadModal} />
 
-                <p>
-                    Para visualizar los datos, primero elige un tipo de filtro.
-                </p>
+                <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} />
 
-                <Row>
-                    <Col md="2">
-                        <FormGroup>
-                            <label>CCT</label>
-                            <Input type="text" size="large" style={{ width: "100%" }} />
-                        </FormGroup>
-                    </Col>
-
-                    <Col md="2">
-                        <FormGroup>
-                            <label>Región</label>
-                            <Select
-                                placeholder="Elige una opción"
-                                size="large"
-                                style={{ width: "100%" }}
-                                onChange={(e) => setRegion(e)}
-                            >
-                                <Option value="CENTRO">Centro</Option>
-                                <Option value="ACAPULCO">Acapulco</Option>
-                                <Option value="MONTAÑA">Montaña</Option>
-                            </Select>
-                        </FormGroup>
-                    </Col>
-
-                    <Col md="2">
-                        <FormGroup>
-                            <label>Municipio</label>
-                            <Select
-                                showSearch
-                                size="large"
-                                style={{ width: "100%" }}
-                                placeholder="Escribe un municipio"
-                                optionFilterProp="children"
-                                filterOption={(input, option) =>
-                                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-                                }
-                                filterSort={(optionA, optionB) =>
-                                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
-                                }
-                                onChange={cambiarMunicipio}
-                                value={municipio}
-                            >
-                                {
-                                    Municipios.map((municipio, index) => {
-                                        return (
-                                            <Option key={index} value={municipio.label}>{municipio.label}</Option>
-                                        );
-                                    })
-                                }
-                            </Select>
-                        </FormGroup>
-                    </Col>
-
-                    <Col md="2">
-                        <FormGroup>
-                            <label>Localidad</label>
-                            <Select
-                                showSearch
-                                size="large"
-                                style={{ width: "100%" }}
-                                placeholder="Escribe un municipio"
-                                optionFilterProp="children"
-                                filterOption={(input, option) =>
-                                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-                                }
-                                filterSort={(optionA, optionB) =>
-                                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
-                                }
-                            >
-                                {
-                                    localidades !== null && localidades.map((localidad, index) => {
-                                        return (
-                                            <Option key={index} value={localidad.nombre}>{localidad.nombre}</Option>
-                                        );
-                                    })
-                                }
-                            </Select>
-                        </FormGroup>
-                    </Col>
-
-                    <Col md="2">
-                        <FormGroup>
-                            <label className="text-white">.</label><br />
-                            <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar</Button>
-                        </FormGroup>
-
-                    </Col>
-
-                    <Col md="2">
-                        <FormGroup>
-                            <label className="text-white" >.</label><br></br>
+                {escuelas > 0 &&
+                    <Row className="mt-5"> 
+                        <Col md="6">
+                            <p>
+                                Se muestran {escuelas} escuelas, con un total aproximado de {alumnos} Alumnos.
+                                </p>
+                        </Col>
+                        <Col>
                             <ReactHTMLTableToExcel
                                 id="test-table-xls-button"
-                                className="btn btn-success"
+                                className="btn btn-success float-right"
                                 table="tblDatos"
                                 filename="Reporte"
                                 sheet="tablexls"
-                                buttonText="Exportar Excel" />
-                        </FormGroup>
+                                buttonText="Exportar Excel"
+                            />
+                        </Col>
+                    </Row>
+                }
 
-
-                    </Col>
-                </Row>
                 <Row className="mt-5">
-                    <Col md="12">
+                    <Col md="12" className="table-responsive">
                         <TablaDatos datos={datos} />
                     </Col>
                 </Row>

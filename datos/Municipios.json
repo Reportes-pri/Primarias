@@ -1,569 +1,326 @@
 [
     {
-        "id": 367,
-        "estado_id": 12,
-        "value": "001",
-        "label": "Acapulco de Juárez",
-        "activo": 1
+        "clave": "1",
+        "nombre": "Acapulco de Juárez"
     },
     {
-        "id": 368,
-        "estado_id": 12,
-        "value": "002",
-        "label": "Ahuacuotzingo",
-        "activo": 1
+        "clave": "2",
+        "nombre": "Ahuacuotzingo"
     },
     {
-        "id": 369,
-        "estado_id": 12,
-        "value": "003",
-        "label": "Ajuchitlán del Progreso",
-        "activo": 1
+        "clave": "3",
+        "nombre": "Ajuchitlán del Progreso"
     },
     {
-        "id": 370,
-        "estado_id": 12,
-        "value": "004",
-        "label": "Alcozauca de Guerrero",
-        "activo": 1
+        "clave": "4",
+        "nombre": "Alcozauca de Guerrero"
     },
     {
-        "id": 371,
-        "estado_id": 12,
-        "value": "005",
-        "label": "Alpoyeca",
-        "activo": 1
+        "clave": "5",
+        "nombre": "Alpoyeca"
     },
     {
-        "id": 372,
-        "estado_id": 12,
-        "value": "006",
-        "label": "Apaxtla",
-        "activo": 1
+        "clave": "6",
+        "nombre": "Apaxtla"
     },
     {
-        "id": 373,
-        "estado_id": 12,
-        "value": "007",
-        "label": "Arcelia",
-        "activo": 1
+        "clave": "7",
+        "nombre": "Arcelia"
     },
     {
-        "id": 374,
-        "estado_id": 12,
-        "value": "008",
-        "label": "Atenango del Río",
-        "activo": 1
+        "clave": "8",
+        "nombre": "Atenango del Río"
     },
     {
-        "id": 375,
-        "estado_id": 12,
-        "value": "009",
-        "label": "Atlamajalcingo del Monte",
-        "activo": 1
+        "clave": "9",
+        "nombre": "Atlamajalcingo del Monte"
     },
     {
-        "id": 376,
-        "estado_id": 12,
-        "value": "010",
-        "label": "Atlixtac",
-        "activo": 1
+        "clave": "10",
+        "nombre": "Atlixtac"
     },
     {
-        "id": 377,
-        "estado_id": 12,
-        "value": "011",
-        "label": "Atoyac de Álvarez",
-        "activo": 1
+        "clave": "11",
+        "nombre": "Atoyac de Álvarez"
     },
     {
-        "id": 378,
-        "estado_id": 12,
-        "value": "012",
-        "label": "Ayutla de los Libres",
-        "activo": 1
+        "clave": "12",
+        "nombre": "Ayutla de los Libres"
     },
     {
-        "id": 379,
-        "estado_id": 12,
-        "value": "013",
-        "label": "Azoyú",
-        "activo": 1
+        "clave": "13",
+        "nombre": "Azoyú"
     },
     {
-        "id": 380,
-        "estado_id": 12,
-        "value": "014",
-        "label": "Benito Juárez",
-        "activo": 1
+        "clave": "14",
+        "nombre": "Benito Juárez"
     },
     {
-        "id": 381,
-        "estado_id": 12,
-        "value": "015",
-        "label": "Buenavista de Cuéllar",
-        "activo": 1
+        "clave": "15",
+        "nombre": "Buenavista de Cuéllar"
     },
     {
-        "id": 382,
-        "estado_id": 12,
-        "value": "016",
-        "label": "Coahuayutla de José María Izazaga",
-        "activo": 1
+        "clave": "16",
+        "nombre": "Coahuayutla de José María Izazaga"
     },
     {
-        "id": 383,
-        "estado_id": 12,
-        "value": "017",
-        "label": "Cocula",
-        "activo": 1
+        "clave": "17",
+        "nombre": "Cocula"
     },
     {
-        "id": 384,
-        "estado_id": 12,
-        "value": "018",
-        "label": "Copala",
-        "activo": 1
+        "clave": "18",
+        "nombre": "Copala"
     },
     {
-        "id": 385,
-        "estado_id": 12,
-        "value": "019",
-        "label": "Copalillo",
-        "activo": 1
+        "clave": "19",
+        "nombre": "Copalillo"
     },
     {
-        "id": 386,
-        "estado_id": 12,
-        "value": "020",
-        "label": "Copanatoyac",
-        "activo": 1
+        "clave": "20",
+        "nombre": "Copanatoyac"
     },
     {
-        "id": 387,
-        "estado_id": 12,
-        "value": "021",
-        "label": "Coyuca de Benítez",
-        "activo": 1
+        "clave": "21",
+        "nombre": "Coyuca de Benítez"
     },
     {
-        "id": 388,
-        "estado_id": 12,
-        "value": "022",
-        "label": "Coyuca de Catalán",
-        "activo": 1
+        "clave": "22",
+        "nombre": "Coyuca de Catalán"
     },
     {
-        "id": 389,
-        "estado_id": 12,
-        "value": "023",
-        "label": "Cuajinicuilapa",
-        "activo": 1
+        "clave": "23",
+        "nombre": "Cuajinicuilapa"
     },
     {
-        "id": 390,
-        "estado_id": 12,
-        "value": "024",
-        "label": "Cualác",
-        "activo": 1
+        "clave": "24",
+        "nombre": "Cualác"
     },
     {
-        "id": 391,
-        "estado_id": 12,
-        "value": "025",
-        "label": "Cuautepec",
-        "activo": 1
+        "clave": "25",
+        "nombre": "Cuautepec"
     },
     {
-        "id": 392,
-        "estado_id": 12,
-        "value": "026",
-        "label": "Cuetzala del Progreso",
-        "activo": 1
+        "clave": "26",
+        "nombre": "Cuetzala del Progreso"
     },
     {
-        "id": 393,
-        "estado_id": 12,
-        "value": "027",
-        "label": "Cutzamala de Pinzón",
-        "activo": 1
+        "clave": "27",
+        "nombre": "Cutzamala de Pinzón"
     },
     {
-        "id": 394,
-        "estado_id": 12,
-        "value": "028",
-        "label": "Chilapa de Álvarez",
-        "activo": 1
+        "clave": "28",
+        "nombre": "Chilapa de Álvarez"
     },
     {
-        "id": 395,
-        "estado_id": 12,
-        "value": "029",
-        "label": "Chilpancingo de los Bravo",
-        "activo": 1
+        "clave": "29",
+        "nombre": "Chilpancingo de los Bravo"
     },
     {
-        "id": 396,
-        "estado_id": 12,
-        "value": "030",
-        "label": "Florencio Villarreal",
-        "activo": 1
+        "clave": "30",
+        "nombre": "Florencio Villarreal"
     },
     {
-        "id": 397,
-        "estado_id": 12,
-        "value": "031",
-        "label": "General Canuto A. Neri",
-        "activo": 1
+        "clave": "31",
+        "nombre": "General Canuto A. Neri"
     },
     {
-        "id": 398,
-        "estado_id": 12,
-        "value": "032",
-        "label": "General Heliodoro Castillo",
-        "activo": 1
+        "clave": "32",
+        "nombre": "General Heliodoro Castillo"
     },
     {
-        "id": 399,
-        "estado_id": 12,
-        "value": "033",
-        "label": "Huamuxtitlán",
-        "activo": 1
+        "clave": "33",
+        "nombre": "Huamuxtitlán"
     },
     {
-        "id": 400,
-        "estado_id": 12,
-        "value": "034",
-        "label": "Huitzuco de los Figueroa",
-        "activo": 1
+        "clave": "34",
+        "nombre": "Huitzuco de los Figueroa"
     },
     {
-        "id": 401,
-        "estado_id": 12,
-        "value": "035",
-        "label": "Iguala de la Independencia",
-        "activo": 1
+        "clave": "35",
+        "nombre": "Iguala de la Independencia"
     },
     {
-        "id": 402,
-        "estado_id": 12,
-        "value": "036",
-        "label": "Igualapa",
-        "activo": 1
+        "clave": "36",
+        "nombre": "Igualapa"
     },
     {
-        "id": 403,
-        "estado_id": 12,
-        "value": "037",
-        "label": "Ixcateopan de Cuauhtémoc",
-        "activo": 1
+        "clave": "37",
+        "nombre": "Ixcateopan de Cuauhtémoc"
     },
     {
-        "id": 404,
-        "estado_id": 12,
-        "value": "038",
-        "label": "Zihuatanejo de Azueta",
-        "activo": 1
+        "clave": "38",
+        "nombre": "Zihuatanejo de Azueta"
     },
     {
-        "id": 405,
-        "estado_id": 12,
-        "value": "039",
-        "label": "Juan R. Escudero",
-        "activo": 1
+        "clave": "39",
+        "nombre": "Juan R. Escudero"
     },
     {
-        "id": 406,
-        "estado_id": 12,
-        "value": "040",
-        "label": "Leonardo Bravo",
-        "activo": 1
+        "clave": "40",
+        "nombre": "Leonardo Bravo"
     },
     {
-        "id": 407,
-        "estado_id": 12,
-        "value": "041",
-        "label": "Malinaltepec",
-        "activo": 1
+        "clave": "41",
+        "nombre": "Malinaltepec"
     },
     {
-        "id": 408,
-        "estado_id": 12,
-        "value": "042",
-        "label": "Mártir de Cuilapan",
-        "activo": 1
+        "clave": "42",
+        "nombre": "Mártir de Cuilapan"
     },
     {
-        "id": 409,
-        "estado_id": 12,
-        "value": "043",
-        "label": "Metlatónoc",
-        "activo": 1
+        "clave": "43",
+        "nombre": "Metlatónoc"
     },
     {
-        "id": 410,
-        "estado_id": 12,
-        "value": "044",
-        "label": "Mochitlán",
-        "activo": 1
+        "clave": "44",
+        "nombre": "Mochitlán"
     },
     {
-        "id": 411,
-        "estado_id": 12,
-        "value": "045",
-        "label": "Olinalá",
-        "activo": 1
+        "clave": "45",
+        "nombre": "Olinalá"
     },
     {
-        "id": 412,
-        "estado_id": 12,
-        "value": "046",
-        "label": "Ometepec",
-        "activo": 1
+        "clave": "46",
+        "nombre": "Ometepec"
     },
     {
-        "id": 413,
-        "estado_id": 12,
-        "value": "047",
-        "label": "Pedro Ascencio Alquisiras",
-        "activo": 1
+        "clave": "47",
+        "nombre": "Pedro Ascencio Alquisiras"
     },
     {
-        "id": 414,
-        "estado_id": 12,
-        "value": "048",
-        "label": "Petatlán",
-        "activo": 1
+        "clave": "48",
+        "nombre": "Petatlán"
     },
     {
-        "id": 415,
-        "estado_id": 12,
-        "value": "049",
-        "label": "Pilcaya",
-        "activo": 1
+        "clave": "49",
+        "nombre": "Pilcaya"
     },
     {
-        "id": 416,
-        "estado_id": 12,
-        "value": "050",
-        "label": "Pungarabato",
-        "activo": 1
+        "clave": "50",
+        "nombre": "Pungarabato"
     },
     {
-        "id": 417,
-        "estado_id": 12,
-        "value": "051",
-        "label": "Quechultenango",
-        "activo": 1
+        "clave": "51",
+        "nombre": "Quechultenango"
     },
     {
-        "id": 418,
-        "estado_id": 12,
-        "value": "052",
-        "label": "San Luis Acatlán",
-        "activo": 1
+        "clave": "52",
+        "nombre": "San Luis Acatlán"
     },
     {
-        "id": 419,
-        "estado_id": 12,
-        "value": "053",
-        "label": "San Marcos",
-        "activo": 1
+        "clave": "53",
+        "nombre": "San Marcos"
     },
     {
-        "id": 420,
-        "estado_id": 12,
-        "value": "054",
-        "label": "San Miguel Totolapan",
-        "activo": 1
+        "clave": "54",
+        "nombre": "San Miguel Totolapan"
     },
     {
-        "id": 421,
-        "estado_id": 12,
-        "value": "055",
-        "label": "Taxco de Alarcón",
-        "activo": 1
+        "clave": "55",
+        "nombre": "Taxco de Alarcón"
     },
     {
-        "id": 422,
-        "estado_id": 12,
-        "value": "056",
-        "label": "Tecoanapa",
-        "activo": 1
+        "clave": "56",
+        "nombre": "Tecoanapa"
     },
     {
-        "id": 423,
-        "estado_id": 12,
-        "value": "057",
-        "label": "Técpan de Galeana",
-        "activo": 1
+        "clave": "57",
+        "nombre": "Técpan de Galeana"
     },
     {
-        "id": 424,
-        "estado_id": 12,
-        "value": "058",
-        "label": "Teloloapan",
-        "activo": 1
+        "clave": "58",
+        "nombre": "Teloloapan"
     },
     {
-        "id": 425,
-        "estado_id": 12,
-        "value": "059",
-        "label": "Tepecoacuilco de Trujano",
-        "activo": 1
+        "clave": "59",
+        "nombre": "Tepecoacuilco de Trujano"
     },
     {
-        "id": 426,
-        "estado_id": 12,
-        "value": "060",
-        "label": "Tetipac",
-        "activo": 1
+        "clave": "60",
+        "nombre": "Tetipac"
     },
     {
-        "id": 427,
-        "estado_id": 12,
-        "value": "061",
-        "label": "Tixtla de Guerrero",
-        "activo": 1
+        "clave": "61",
+        "nombre": "Tixtla de Guerrero"
     },
     {
-        "id": 428,
-        "estado_id": 12,
-        "value": "062",
-        "label": "Tlacoachistlahuaca",
-        "activo": 1
+        "clave": "62",
+        "nombre": "Tlacoachistlahuaca"
     },
     {
-        "id": 429,
-        "estado_id": 12,
-        "value": "063",
-        "label": "Tlacoapa",
-        "activo": 1
+        "clave": "63",
+        "nombre": "Tlacoapa"
     },
     {
-        "id": 430,
-        "estado_id": 12,
-        "value": "064",
-        "label": "Tlalchapa",
-        "activo": 1
+        "clave": "64",
+        "nombre": "Tlalchapa"
     },
     {
-        "id": 431,
-        "estado_id": 12,
-        "value": "065",
-        "label": "Tlalixtaquilla de Maldonado",
-        "activo": 1
+        "clave": "65",
+        "nombre": "Tlalixtaquilla de Maldonado"
     },
     {
-        "id": 432,
-        "estado_id": 12,
-        "value": "066",
-        "label": "Tlapa de Comonfort",
-        "activo": 1
+        "clave": "66",
+        "nombre": "Tlapa de Comonfort"
     },
     {
-        "id": 433,
-        "estado_id": 12,
-        "value": "067",
-        "label": "Tlapehuala",
-        "activo": 1
+        "clave": "67",
+        "nombre": "Tlapehuala"
     },
     {
-        "id": 434,
-        "estado_id": 12,
-        "value": "068",
-        "label": "La Unión de Isidoro Montes de Oca",
-        "activo": 1
+        "clave": "68",
+        "nombre": "La Unión de Isidoro Montes de Oca"
     },
     {
-        "id": 435,
-        "estado_id": 12,
-        "value": "069",
-        "label": "Xalpatláhuac",
-        "activo": 1
+        "clave": "69",
+        "nombre": "Xalpatláhuac"
     },
     {
-        "id": 436,
-        "estado_id": 12,
-        "value": "070",
-        "label": "Xochihuehuetlán",
-        "activo": 1
+        "clave": "70",
+        "nombre": "Xochihuehuetlán"
     },
     {
-        "id": 437,
-        "estado_id": 12,
-        "value": "071",
-        "label": "Xochistlahuaca",
-        "activo": 1
+        "clave": "71",
+        "nombre": "Xochistlahuaca"
     },
     {
-        "id": 438,
-        "estado_id": 12,
-        "value": "072",
-        "label": "Zapotitlán Tablas",
-        "activo": 1
+        "clave": "72",
+        "nombre": "Zapotitlán Tablas"
     },
     {
-        "id": 439,
-        "estado_id": 12,
-        "value": "073",
-        "label": "Zirándaro",
-        "activo": 1
+        "clave": "73",
+        "nombre": "Zirándaro"
     },
     {
-        "id": 440,
-        "estado_id": 12,
-        "value": "074",
-        "label": "Zitlala",
-        "activo": 1
+        "clave": "74",
+        "nombre": "Zitlala"
     },
     {
-        "id": 441,
-        "estado_id": 12,
-        "value": "075",
-        "label": "Eduardo Neri",
-        "activo": 1
+        "clave": "75",
+        "nombre": "Eduardo Neri"
     },
     {
-        "id": 442,
-        "estado_id": 12,
-        "value": "076",
-        "label": "Acatepec",
-        "activo": 1
+        "clave": "76",
+        "nombre": "Acatepec"
     },
     {
-        "id": 443,
-        "estado_id": 12,
-        "value": "077",
-        "label": "Marquelia",
-        "activo": 1
+        "clave": "77",
+        "nombre": "Marquelia"
     },
     {
-        "id": 444,
-        "estado_id": 12,
-        "value": "078",
-        "label": "Cochoapa el Grande",
-        "activo": 1
+        "clave": "78",
+        "nombre": "Cochoapa el Grande"
     },
     {
-        "id": 445,
-        "estado_id": 12,
-        "value": "079",
-        "label": "José Joaquín de Herrera",
-        "activo": 1
+        "clave": "79",
+        "nombre": "José Joaquín de Herrera"
     },
     {
-        "id": 446,
-        "estado_id": 12,
-        "value": "080",
-        "label": "Juchitán",
-        "activo": 1
+        "clave": "80",
+        "nombre": "Juchitán"
     },
     {
-        "id": 447,
-        "estado_id": 12,
-        "value": "081",
-        "label": "Iliatenco",
-        "activo": 1
+        "clave": "81",
+        "nombre": "Iliatenco"
     }
 ]

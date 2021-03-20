@@ -2,7 +2,7 @@
 export default function TablaDatos({ datos }) {
 
     return (
-        <table className="table  table-striped table-responsive" style={{width: "100%"}} id="tblDatos">
+        <table className="table  table-striped" style={{width: "100%"}} id="tblDatos">
             <thead style={{textAlign: "center", backgroundColor: "#007bff", color: "white"}}>
                 <tr>
                     <th>NP</th>
@@ -21,7 +21,7 @@ export default function TablaDatos({ datos }) {
             </thead>
             <tbody style={{textAlign: "center"}}>
                 {
-                   datos !== null && datos.docs.map((doc, id) => {
+                   datos !== null && datos.docs && datos.docs.map((doc, id) => {
                         return (
                             <tr key={id} >
                                 <td>{doc.data().np}</td>
