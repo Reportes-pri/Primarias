@@ -1,9 +1,6 @@
 {
   "name": "reportes-primaria",
   "version": "0.1.0",
-  "engines": {
-    "node": "14x"
-  },
   "private": true,
   "scripts": {
     "dev": "next dev -p 8000",
