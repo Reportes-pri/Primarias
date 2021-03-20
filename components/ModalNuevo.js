@@ -4,7 +4,7 @@ import { Col, FormGroup, Row } from "reactstrap";
 import SelectMunicipio from "./SelectMunicipio";
 import { db } from "../configuracion/firebase";
 import SelectLocalidad from "./SelectLocalidad";
-
+import localidadesGuerrero from "../datos/localidades.json";
 
 const { Option } = Select;
 
@@ -30,7 +30,7 @@ export default function Nuevo({ visible, setVisible }) {
 
 
     //para asignar las localidades
-    const [localidades, setLocalidades] = useState(null);
+    const [localidades, setLocalidades] = useState(localidadesGuerrero);
 
 
     const guardar = async () => {
