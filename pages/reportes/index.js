@@ -8,7 +8,8 @@ import TablaDatos from "../../components/TablaDatos";
 import ModalNuevo from "../../components/ModalNuevo";
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import Filtro from "../../components/Filtro";
-
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 export default function Index() {
 
@@ -42,6 +43,12 @@ export default function Index() {
         )
     }
 
+    function crearPdf() {
+        const doc = new jsPDF('landscape');
+        autoTable(doc, { html: '#tblDatos' });
+        doc.save('Reportes.pdf')
+    }
+
     return (
         <Layout>
             <PageHeader
@@ -57,22 +64,30 @@ export default function Index() {
                 <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} />
 
                 {escuelas > 0 &&
-                    <Row className="mt-5"> 
+                    <Row className="mt-5">
                         <Col md="6">
                             <p>
                                 Se muestran {escuelas} escuelas, con un total aproximado de {alumnos} Alumnos.
                                 </p>
                         </Col>
-                        <Col>
+
+                        <Col >
+                            <div className="float-right">
+                                <button className="btn btn-danger " onClick={crearPdf}>Exportar a PDF</button>
+                                  &nbsp; &nbsp;
                             <ReactHTMLTableToExcel
-                                id="test-table-xls-button"
-                                className="btn btn-success float-right"
-                                table="tblDatos"
-                                filename="Reporte"
-                                sheet="tablexls"
-                                buttonText="Exportar Excel"
-                            />
+                                    id="test-table-xls-button"
+                                    className="btn btn-success "
+                                    table="tblDatos"
+                                    filename="Reporte"
+                                    sheet="tablexls"
+                                    buttonText="Exportar a Excel"
+                                />
+                            </div>
+
+
                         </Col>
+
                     </Row>
                 }
 
