@@ -2,7 +2,7 @@
   "name": "reportes-primaria",
   "version": "0.1.0",
   "engines": {
-    "node": "14.15.1"
+    "node": "10.0.9"
   },
   "private": true,
   "scripts": {
