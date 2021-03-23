@@ -6,7 +6,7 @@ import { Select } from "antd";
 const { Option } = Select;
 
 
-export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades }) {
+export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades, municipio }) {
 
 
     const cambiarMunicipio = async (e, a) => {
@@ -29,6 +29,7 @@ export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades 
             filterSort={(optionA, optionB) =>
                 optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
             }
+            value={municipio}
             onChange={cambiarMunicipio}
         >
             {

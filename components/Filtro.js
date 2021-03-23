@@ -13,9 +13,9 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
     const [loading, setLoading] = useState(false);
 
     const [cct, setCct] = useState("");
-    const [region, setRegion] = useState("");
-    const [municipio, setMunicipio] = useState("");
-    const [localidad, setLocalidad] = useState("");
+    const [region, setRegion] = useState(null);
+    const [municipio, setMunicipio] = useState(null);
+    const [localidad, setLocalidad] = useState(null);
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -77,6 +77,13 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
                 setLoading(false);
             }
+
+            setCct("");
+            setRegion(null);
+            setMunicipio(null);
+            setLocalidad(null);
+
+
         } catch (error) {
             console.log(error);
             message.error("Ocurrió un error, contacte al administrador");
@@ -111,6 +118,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                             size="large"
                             style={{ width: "100%" }}
                             onChange={(e) => setRegion(e)}
+                            value={region}
                         >
                             <Option value="ACAPULCO">Acapulco</Option>
                             <Option value="COSTA CHICA">Costa Chica</Option>
@@ -126,14 +134,14 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                 <Col md="3">
                     <FormGroup>
                         <label>Municipio</label>
-                        <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} />
+                        <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipio={municipio} />
                     </FormGroup>
                 </Col>
 
                 <Col md="3">
                     <FormGroup>
                         <label>Localidad</label>
-                        <SelectLocalidad localidades={localidades} setLocalidad={setLocalidad} />
+                        <SelectLocalidad localidades={localidades} setLocalidad={setLocalidad} localidad={localidad} />
                     </FormGroup>
                 </Col>
 
