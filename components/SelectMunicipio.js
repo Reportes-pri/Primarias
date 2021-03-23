@@ -1,4 +1,4 @@
-import municipios from "../datos/municipios.json";
+//import municipios from "../datos/municipios.json";
 import localidades from "../datos/localidades.json";
 
 import { Select } from "antd";
@@ -6,7 +6,7 @@ import { Select } from "antd";
 const { Option } = Select;
 
 
-export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades, municipio }) {
+export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades, municipio, municipios }) {
 
 
     const cambiarMunicipio = async (e, a) => {

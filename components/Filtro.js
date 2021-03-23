@@ -5,6 +5,7 @@ import SelectLocalidad from "./SelectLocalidad";
 import SelectMunicipio from "./SelectMunicipio";
 import { db } from "../configuracion/firebase";
 import localidadesGuerrero from "../datos/localidades.json";
+import municipiosGuerrero from "../datos/municipios.json";
 
 const { Option } = Select;
 
@@ -19,6 +20,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
+    const [municipios, setMunicipios] = useState(localidadesGuerrero);
 
     const consultarDatos = async (e) => {
         try {
@@ -30,25 +32,25 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
             }
-            else if (region !== "" && municipio !== "" && localidad !== "") {
+            else if (region !== null && municipio !== null && localidad !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
-            else if (region !== "" && municipio !== "") {
+            else if (region !== null && municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).get();
             }
-            else if (localidad !== "" && municipio !== "") {
+            else if (localidad !== null && municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
-            else if (localidad !== "" && region !== "") {
+            else if (localidad !== null && region !== null) {
                 snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
-            else if (region !== "") {
+            else if (region !== null) {
                 snapshot = await ref.where("region", "==", region.toUpperCase()).get();
             }
-            else if (municipio !== "") {
+            else if (municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).get();
             }
-            else if (localidad !== "") {
+            else if (localidad !== null) {
                 snapshot = await ref.where("localidad", "==", localidad.toUpperCase()).get();
             }
             else {
@@ -90,6 +92,12 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
         }
     }
 
+    const cambiarRegion = (e) => {
+        setMunicipios(municipiosGuerrero.filter(doc => doc.region === e));
+        setMunicipio(null);
+        setRegion(e);
+    }
+
     return (
         <div>
             <p>
@@ -117,16 +125,16 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                             placeholder="Elige una opción"
                             size="large"
                             style={{ width: "100%" }}
-                            onChange={(e) => setRegion(e)}
+                            onChange={cambiarRegion}
                             value={region}
                         >
-                            <Option value="ACAPULCO">Acapulco</Option>
-                            <Option value="COSTA CHICA">Costa Chica</Option>
-                            <Option value="COSTA GRANDE">Costa Grande</Option>
-                            <Option value="CENTRO">Centro</Option>
-                            <Option value="NORTE">Norte</Option>
-                            <Option value="MONTAÑA">Montaña</Option>
-                            <Option value="TIERRA CALIENTE">Tierra Caliente</Option>
+                            <Option value="Acapulco">Acapulco</Option>
+                            <Option value="Costa Chica">Costa Chica</Option>
+                            <Option value="Costa Grande">Costa Grande</Option>
+                            <Option value="Centro">Centro</Option>
+                            <Option value="Norte">Norte</Option>
+                            <Option value="La Montaña">Montaña</Option>
+                            <Option value="Tierra Caliente">Tierra Caliente</Option>
                         </Select>
                     </FormGroup>
                 </Col>
@@ -134,7 +142,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                 <Col md="3">
                     <FormGroup>
                         <label>Municipio</label>
-                        <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipio={municipio} />
+                        <SelectMunicipio municipios={municipios} setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipio={municipio} />
                     </FormGroup>
                 </Col>
 
