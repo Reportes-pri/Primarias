@@ -3,7 +3,7 @@ import { appFirebase } from "../../configuracion/firebase";
 import { useRouter } from "next/router";
 import { Col, Row, Spinner } from "reactstrap";
 import Layout from "../../components/layout";
-import { PageHeader, Button } from "antd";
+import { PageHeader, Button, BackTop } from "antd";
 import TablaDatos from "../../components/TablaDatos";
 import ModalNuevo from "../../components/ModalNuevo";
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
@@ -59,6 +59,8 @@ export default function Index() {
                 ]}
                 avatar={{ src: '/fi.png' }}
             >
+                <BackTop />
+
                 <ModalNuevo visible={visibilidadModal} setVisible={setVisibilidadModal} />
 
                 <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} />
