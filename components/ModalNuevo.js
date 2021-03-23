@@ -5,6 +5,8 @@ import SelectMunicipio from "./SelectMunicipio";
 import { db } from "../configuracion/firebase";
 import SelectLocalidad from "./SelectLocalidad";
 import localidadesGuerrero from "../datos/localidades.json";
+import municipiosGuerrero from "../datos/municipios.json";
+const { TextArea } = Input;
 
 const { Option } = Select;
 
@@ -16,7 +18,7 @@ export default function Nuevo({ visible, setVisible }) {
 
     //formulario
     const [anio, setAnio] = useState("");
-    const [region, setRegion] = useState("");
+    const [region, setRegion] = useState(null);
     const [cct, setCct] = useState("");
     const [plantel, setPlantel] = useState("");
     const [alumnos, setAlumnos] = useState("");
@@ -30,9 +32,14 @@ export default function Nuevo({ visible, setVisible }) {
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
+    const [municipios, setMunicipios] = useState(municipiosGuerrero);
 
 
     const guardar = async () => {
+
+        console.log(anio, region, cct, plantel, alumnos, nivelEducativo, iq, municipio, localidad, meta, programa);
+
+        //return
         try {
             setLoading(true);
 
@@ -41,13 +48,13 @@ export default function Nuevo({ visible, setVisible }) {
                 anhio: anio,
                 cct: cct.trim(),
                 iq: iq,
-                localidad: localidad.toUpperCase().trim(),
+                localidad: localidad ? localidad.toUpperCase().trim() : "",
                 meta: meta.toUpperCase(),
-                municipio: municipio.toUpperCase().trim(),
+                municipio: municipio ? municipio.toUpperCase().trim() : "",
                 nivelEducativo: nivelEducativo.trim(),
                 plantelEducativo: plantel.trim(),
                 programa: programa.toUpperCase(),
-                region: region.trim()
+                region: region ? region.trim() : ""
             });
 
             setLoading(false);
@@ -63,6 +70,12 @@ export default function Nuevo({ visible, setVisible }) {
 
     const limpiar = () => {
 
+    }
+
+    const cambiarRegion = (e) => {
+        setMunicipios(municipiosGuerrero.filter(doc => doc.region === e));
+        setMunicipio(null);
+        setRegion(e);
     }
 
 
@@ -104,30 +117,6 @@ export default function Nuevo({ visible, setVisible }) {
                 <Row>
                     <Col>
                         <FormGroup>
-                            <label>Región</label>
-                            <Select placeholder="Elige una opción" size="large" style={{ width: "100%" }} onChange={(e) => setRegion(e)} >
-                                <Option value="ACAPULCO">Acapulco</Option>
-                                <Option value="COSTA CHICA">Costa Chica</Option>
-                                <Option value="COSTA GRANDE">Costa Grande</Option>
-                                <Option value="CENTRO">Centro</Option>
-                                <Option value="NORTE">Norte</Option>
-                                <Option value="MONTAÑA">Montaña</Option>
-                                <Option value="TIERRA CALIENTE">Tierra Caliente</Option>
-                            </Select>
-                        </FormGroup>
-                    </Col>
-
-                    <Col>
-                        <FormGroup>
-                            <label>Alumnos</label>
-                            <Input size="large" style={{ width: "100%" }} type="number" value={alumnos} onChange={(e) => setAlumnos(e.target.value)} />
-                        </FormGroup>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col>
-                        <FormGroup>
                             <label>Nivel Educativo</label>
                             <Input size="large" style={{ width: "100%" }} value={nivelEducativo} onChange={(e) => setNivelEducativo(e.target.value)} />
                         </FormGroup>
@@ -141,11 +130,46 @@ export default function Nuevo({ visible, setVisible }) {
                     </Col>
                 </Row>
 
+
+                <Row>
+                    <Col>
+                        <FormGroup>
+                            <label>Alumnos</label>
+                            <Input size="large" style={{ width: "100%" }} type="number" value={alumnos} onChange={(e) => setAlumnos(e.target.value)} />
+                        </FormGroup>
+                    </Col>
+
+
+                    <Col>
+                        <FormGroup>
+                            <label>Región</label>
+                            <Select
+                                placeholder="Elige una opción"
+                                size="large"
+                                style={{ width: "100%" }}
+                                onChange={cambiarRegion}
+                                value={region}
+                            >
+                                <Option value="Acapulco">Acapulco</Option>
+                                <Option value="Costa Chica">Costa Chica</Option>
+                                <Option value="Costa Grande">Costa Grande</Option>
+                                <Option value="Centro">Centro</Option>
+                                <Option value="Norte">Norte</Option>
+                                <Option value="La Montaña">Montaña</Option>
+                                <Option value="Tierra Caliente">Tierra Caliente</Option>
+                            </Select>
+                        </FormGroup>
+                    </Col>
+
+
+                </Row>
+
+
                 <Row>
                     <Col md="6">
                         <FormGroup>
                             <label>Municipio</label>
-                            <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} />
+                            <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipios={municipios} />
                         </FormGroup>
                     </Col>
                     <Col md="6">

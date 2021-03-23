@@ -20,7 +20,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
-    const [municipios, setMunicipios] = useState(localidadesGuerrero);
+    const [municipios, setMunicipios] = useState(municipiosGuerrero);
 
     const consultarDatos = async (e) => {
         try {
