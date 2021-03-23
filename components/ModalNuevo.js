@@ -15,7 +15,6 @@ export default function Nuevo({ visible, setVisible }) {
 
 
     //formulario
-    const [np, setNp] = useState("");
     const [anio, setAnio] = useState("");
     const [region, setRegion] = useState("");
     const [cct, setCct] = useState("");
@@ -46,7 +45,6 @@ export default function Nuevo({ visible, setVisible }) {
                 meta: meta.toUpperCase(),
                 municipio: municipio.toUpperCase().trim(),
                 nivelEducativo: nivelEducativo.trim(),
-                np: np.trim(),
                 plantelEducativo: plantel.trim(),
                 programa: programa.toUpperCase(),
                 region: region.trim()
@@ -81,8 +79,8 @@ export default function Nuevo({ visible, setVisible }) {
                 <Row>
                     <Col>
                         <FormGroup>
-                            <label>N/P</label>
-                            <Input size="large" style={{ width: "100%" }} value={np} onChange={(e) => setNp(e.target.value)} />
+                            <label>CCT</label>
+                            <Input size="large" style={{ width: "100%" }} value={cct} onChange={(e) => setCct(e.target.value)} />
                         </FormGroup>
                     </Col>
 
@@ -90,6 +88,15 @@ export default function Nuevo({ visible, setVisible }) {
                         <FormGroup>
                             <label>Año</label>
                             <Input size="large" style={{ width: "100%" }} type="number" value={anio} onChange={(e) => setAnio(e.target.value)} />
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col>
+                        <FormGroup>
+                            <label>Plantel Educativo</label>
+                            <Input size="large" style={{ width: "100%" }} value={plantel} onChange={(e) => setPlantel(e.target.value)} />
                         </FormGroup>
                     </Col>
                 </Row>
@@ -107,22 +114,6 @@ export default function Nuevo({ visible, setVisible }) {
                                 <Option value="MONTAÑA">Montaña</Option>
                                 <Option value="TIERRA CALIENTE">Tierra Caliente</Option>
                             </Select>
-                        </FormGroup>
-                    </Col>
-
-                    <Col>
-                        <FormGroup>
-                            <label>CCT</label>
-                            <Input size="large" style={{ width: "100%" }} value={cct} onChange={(e) => setCct(e.target.value)} />
-                        </FormGroup>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col>
-                        <FormGroup>
-                            <label>Plantel Educativo</label>
-                            <Input size="large" style={{ width: "100%" }} value={plantel} onChange={(e) => setPlantel(e.target.value)} />
                         </FormGroup>
                     </Col>
 

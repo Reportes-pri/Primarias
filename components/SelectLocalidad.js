@@ -3,7 +3,7 @@ import {Select} from "antd";
 const {Option} = Select;
 
 
-export default function SelectLocalidad({ localidades, setLocalidad }) {
+export default function SelectLocalidad({ localidades, setLocalidad, localidad }) {
 
     return (
         <Select
@@ -19,6 +19,7 @@ export default function SelectLocalidad({ localidades, setLocalidad }) {
             filterSort={(optionA, optionB) =>
                 optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
             }
+            value={localidad}
             onChange={(e) => setLocalidad(e ? e : "")}
         >
             {

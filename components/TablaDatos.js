@@ -19,23 +19,23 @@ export default function TablaDatos({ datos }) {
                     <th>PROGRAMA</th>
                 </tr>
             </thead>
-            <tbody style={{textAlign: "center"}}>
+            <tbody>
                 {
                    datos !== null && datos.docs && datos.docs.map((doc, id) => {
                         return (
                             <tr key={id} >
-                                <td>{doc.data().np}</td>
-                                <td>{doc.data().anhio}</td>
-                                <td>{doc.data().region}</td>
-                                <td>{doc.data().cct}</td>
-                                <td>{doc.data().plantelEducativo}</td>
-                                <td>{doc.data().municipio}</td>
-                                <td>{doc.data().localidad}</td>
-                                <td>{doc.data().alumnos}</td>
-                                <td>{doc.data().nivelEducativo}</td>
-                                <td>{doc.data().iq}</td>
-                                <td>{doc.data().meta}</td>
-                                <td>{doc.data().programa}</td>
+                                <td style={{textAlign: "center"}} >{id + 1}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().anhio}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().region}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().cct}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().plantelEducativo}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().municipio}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().localidad}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().alumnos}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().nivelEducativo}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().iq}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().meta}</td>
+                                <td style={{textAlign: "center"}}>{doc.data().programa}</td>
                             </tr>
                         );
                     })
