@@ -6,7 +6,7 @@ import { Select } from "antd";
 const { Option } = Select;
 
 
-export default function SelectMunicipioLocalidad({ setMunicipio, setLocalidades, municipio, municipios }) {
+export default function SelectMunicipio({ setMunicipio, setLocalidades, municipio, municipios }) {
 
 
     const cambiarMunicipio = async (e, a) => {

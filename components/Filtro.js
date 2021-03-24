@@ -21,11 +21,12 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
-    const [municipios, setMunicipios] = useState(localidadesGuerrero);
+    const [municipios, setMunicipios] = useState(municipiosGuerrero);
 
     const consultarDatos = async (e) => {
         try {
             e.preventDefault();
+            setLoading(true);
             const ref = db.collection("escuelas");
 
             var snapshot;
@@ -63,7 +64,6 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
 
             if (snapshot.empty) {
-                setLoading(false);
                 setDatos([]);
                 setEscuelas(0);
                 setAlumnos(0);
@@ -80,18 +80,17 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                     escuelas += 1;
                     setEscuelas(escuelas)
                 });
-
-                setLoading(false);
             }
 
             setCct("");
             setRegion(null);
             setMunicipio(null);
             setLocalidad(null);
-
+            setLoading(false);
 
         } catch (error) {
             console.log(error);
+            setLoading(false);
             message.error("Ocurrió un error, contacte al administrador");
         }
     }
