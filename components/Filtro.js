@@ -17,6 +17,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
     const [region, setRegion] = useState(null);
     const [municipio, setMunicipio] = useState(null);
     const [localidad, setLocalidad] = useState(null);
+    const [nivel, setNivel] = useState(null);
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -33,7 +34,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                 snapshot = await ref.where("cct", "==", cct).get();
             }
             else if (region !== null && municipio !== null && localidad !== null) {
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
             }
             else if (region !== null && municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).get();
@@ -52,6 +53,9 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
             }
             else if (localidad !== null) {
                 snapshot = await ref.where("localidad", "==", localidad.toUpperCase()).get();
+            }
+            else if (nivel !== null) {
+                snapshot = await ref.where("nivelEducativo", "==", nivel.toUpperCase()).get();
             }
             else {
                 snapshot = await ref.get();
@@ -153,12 +157,32 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                     </FormGroup>
                 </Col>
 
+                <Col md="3">
+                    <FormGroup>
+                        <label>Nivel educativo</label>
+                        <Select
+                            placeholder="Elige una opción"
+                            size="large"
+                            style={{ width: "100%" }}
+                            onChange={(e) => setNivel(e)}
+                            value={nivel}
+                        >
+                            <Option value="BÁSICO">Basico</Option>
+                            <Option value="MEDIO SUPERIOR">Medio superior</Option>
+                            <Option value="SUPERIOR">Superior</Option>
+                        </Select>
+                    </FormGroup>
+                </Col>
+        
+
                 <Col md="4">
                     <FormGroup>
                         <label className="text-white">opciones</label><br />
                         <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar {loading && <Spinner color="white" size="sm" className="ml-2" />} </Button>
                     </FormGroup>
                 </Col>
+
+                
             </Row>
         </div>
     )
