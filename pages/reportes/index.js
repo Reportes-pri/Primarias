@@ -45,7 +45,13 @@ export default function Index() {
 
     function crearPdf() {
         const doc = new jsPDF('landscape');
-        autoTable(doc, { html: '#tblDatos' });
+
+        autoTable(doc, {
+            html: '#tblDatos', styles: {
+                overflow: 'linebreak',
+                fontSize: 8
+            },
+        });
         doc.save('Reportes.pdf')
     }
 
