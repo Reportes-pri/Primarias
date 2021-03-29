@@ -18,6 +18,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
     const [municipio, setMunicipio] = useState(null);
     const [localidad, setLocalidad] = useState(null);
     const [nivel, setNivel] = useState(null);
+    const [programa, setPrograma] = useState(null);
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -33,9 +34,58 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
 
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
+            } else if (region !== null && municipio !== null && localidad !== null && nivel !== null && programa !== null) {
+                /** Combinacion para 5 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
+            else if (region !== null && municipio !== null && localidad !== null && nivel !== null) {
+                /** Combinacion para 4 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+            } else if (region !== null && municipio !== null && localidad !== null && programa !== null) {
+                /** Combinacion para 4 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+            } else if (region !== null && municipio !== null && nivel !== null && programa !== null) {
+                /** Combinacion para 4 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (region !== null && localidad !== null && nivel !== null && programa !== null) {
+                /** Combinacion para 4 casos */
+                snapshot = await ref.where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+            } else if (municipio !== null && localidad !== null && nivel !== null && programa !== null) {
+                /** Combinacion para 4 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+            }
+
             else if (region !== null && municipio !== null && localidad !== null) {
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+            }
+            else if (municipio !== null && region !== null && nivel !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+            } else if (municipio !== null && region !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (municipio !== null && localidad !== null && nivel !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+            } else if (municipio !== null && localidad !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (municipio !== null && nivel !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (region !== null && localidad !== null && nivel !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+            } else if (region !== null && localidad !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (region !== null && nivel !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+            } else if (localidad !== null && nivel !== null && programa !== null) {
+                /*combinaciones para 3 casos */
+                snapshot = await ref.where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             }
             else if (region !== null && municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).get();
@@ -57,6 +107,9 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
             }
             else if (nivel !== null) {
                 snapshot = await ref.where("nivelEducativo", "==", nivel.toUpperCase()).get();
+            }
+            else if (programa !== null) {
+                snapshot = await ref.where("programa", "==", programa.toUpperCase()).get();
             }
             else {
                 snapshot = await ref.get();
@@ -142,21 +195,21 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                     </FormGroup>
                 </Col>
 
-                <Col md="3">
+                <Col md="2">
                     <FormGroup>
                         <label>Municipio</label>
                         <SelectMunicipio municipios={municipios} setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipio={municipio} />
                     </FormGroup>
                 </Col>
 
-                <Col md="3">
+                <Col md="2">
                     <FormGroup>
                         <label>Localidad</label>
                         <SelectLocalidad localidades={localidades} setLocalidad={setLocalidad} localidad={localidad} />
                     </FormGroup>
                 </Col>
 
-                <Col md="3">
+                <Col md="2">
                     <FormGroup>
                         <label>Nivel educativo</label>
                         <Select
@@ -166,22 +219,39 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                             onChange={(e) => setNivel(e)}
                             value={nivel}
                         >
-                            <Option value="BÁSICO">Basico</Option>
-                            <Option value="MEDIO SUPERIOR">Medio superior</Option>
-                            <Option value="SUPERIOR">Superior</Option>
+                            <Option value="BÁSICO">BÁSICO</Option>
+                            <Option value="MEDIO SUPERIOR">MEDIO SUPERIOR</Option>
+                            <Option value="SUPERIOR">SUPERIOR</Option>
                         </Select>
                     </FormGroup>
                 </Col>
-        
+                <Col md="2">
+                    <FormGroup>
+                        <label>Programa</label>
+                        <Select
+                            placeholder="Elige una opción"
+                            size="large"
+                            style={{ width: "100%" }}
+                            onChange={(e) => setPrograma(e)}
+                            value={programa}
+                        >
+                            <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">INFE</Option>
+                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">FAM</Option>
 
-                <Col md="4">
+                        </Select>
+                    </FormGroup>
+                </Col>
+                <Col md="2">
                     <FormGroup>
                         <label className="text-white">opciones</label><br />
                         <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar {loading && <Spinner color="white" size="sm" className="ml-2" />} </Button>
                     </FormGroup>
                 </Col>
+            </Row>
+            <Row>
 
-                
+
+
             </Row>
         </div>
     )
