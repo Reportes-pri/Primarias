@@ -158,6 +158,8 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                         <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar {loading && <Spinner color="white" size="sm" className="ml-2" />} </Button>
                     </FormGroup>
                 </Col>
+
+                
             </Row>
         </div>
     )
