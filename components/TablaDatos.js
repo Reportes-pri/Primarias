@@ -18,6 +18,8 @@ export default function TablaDatos({ datos }) {
                         <th>IQ</th>
                         <th>META</th>
                         <th>PROGRAMA</th>
+                        <th>Prueba</th>
+                    
                     </tr>
                 </thead>
                 <tbody>
@@ -37,6 +39,8 @@ export default function TablaDatos({ datos }) {
                                     <td style={{ textAlign: "center" }}>{doc.data().iq}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().meta}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().programa}</td>
+                                    <td style={{ textAlign: "center" }}>{doc.data().avanceFisico}</td>
+                                  
                                 </tr>
                             );
                         })

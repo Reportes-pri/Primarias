@@ -28,6 +28,8 @@ export default function Nuevo({ visible, setVisible }) {
     const [localidad, setLocalidad] = useState("");
     const [meta, setMeta] = useState("");
     const [programa, setPrograma] = useState("");
+    const [avanceFisico, setAvanceFisico] = useState("");
+
 
 
     //para asignar las localidades
@@ -37,7 +39,7 @@ export default function Nuevo({ visible, setVisible }) {
 
     const guardar = async () => {
 
-        console.log(anio, region, cct, plantel, alumnos, nivelEducativo, iq, municipio, localidad, meta, programa);
+        //console.log(anio, region, cct, plantel, alumnos, nivelEducativo, iq, municipio, localidad, meta, programa);
 
         //return
         try {
@@ -54,7 +56,8 @@ export default function Nuevo({ visible, setVisible }) {
                 nivelEducativo: nivelEducativo.trim(),
                 plantelEducativo: plantel.trim(),
                 programa: programa.toUpperCase(),
-                region: region ? region.trim() : ""
+                region: region ? region.trim() : "",
+                avanceFisico: avanceFisico ? avanceFisico.trim() : ""
             });
 
             setLoading(false);
@@ -190,10 +193,16 @@ export default function Nuevo({ visible, setVisible }) {
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col md="6">
                         <FormGroup>
                             <label>Programa</label>
                             <Input size="large" style={{ width: "100%" }} value={programa} onChange={(e) => setPrograma(e.target.value)} />
+                        </FormGroup>
+                    </Col>
+                    <Col md="6">
+                        <FormGroup>
+                            <label>Avance fisico</label>
+                            <Input size="large" style={{ width: "100%" }} value={avanceFisico} onChange={(e) => setAvanceFisico(e.target.value)} />
                         </FormGroup>
                     </Col>
                 </Row>
