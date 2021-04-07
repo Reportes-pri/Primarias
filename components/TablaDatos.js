@@ -18,7 +18,7 @@ export default function TablaDatos({ datos }) {
                         <th>IQ</th>
                         <th>META</th>
                         <th>PROGRAMA</th>
-                        <th>Prueba</th>
+                        <th>A FÍSICO</th>
                     
                     </tr>
                 </thead>
