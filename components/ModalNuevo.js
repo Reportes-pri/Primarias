@@ -201,7 +201,7 @@ export default function Nuevo({ visible, setVisible }) {
                     </Col>
                     <Col md="6">
                         <FormGroup>
-                            <label>Avance fisico</label>
+                            <label>Avance Físico</label>
                             <Input size="large" style={{ width: "100%" }} value={avanceFisico} onChange={(e) => setAvanceFisico(e.target.value)} />
                         </FormGroup>
                     </Col>
