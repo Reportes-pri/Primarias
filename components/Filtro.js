@@ -19,6 +19,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
     const [localidad, setLocalidad] = useState(null);
     const [nivel, setNivel] = useState(null);
     const [programa, setPrograma] = useState(null);
+    const [plantelEducativo, setplantelEducativo] = useState(null);
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -31,10 +32,13 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
             const ref = db.collection("escuelas");
 
             var snapshot;
-
+           
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
-            } else if (region !== null && municipio !== null && localidad !== null && nivel !== null && programa !== null) {
+            } else if (plantelEducativo !== "") {
+                snapshot = await ref.where("plantelEducativo", "==", plantelEducativo).get();
+            }
+            else if (region !== null && municipio !== null && localidad !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 5 casos */
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
@@ -160,6 +164,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
             }
 
             setCct("");
+            setplantelEducativo("");
             setRegion(null);
             setMunicipio(null);
             setLocalidad(null);
@@ -194,7 +199,18 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                     </FormGroup>
                 </Col>
             </Row>
+            <p>
+                Ingresa el nombre de la escuela para ver su información.
+            </p>
 
+            <Row>
+                <Col md="4">
+                    <FormGroup>
+                        <label>Nombre del plantel</label>
+                        <Input type="text" size="large" style={{ width: "100%" }} name="plantelEducativo" value={plantelEducativo} onChange={(e) => setplantelEducativo(e.target.value)} />
+                    </FormGroup>
+                </Col>
+            </Row>
             <p>
                 O utiliza los siguientes campos para una búsqueda más avanzada.
             </p>

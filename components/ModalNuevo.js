@@ -29,7 +29,7 @@ export default function Nuevo({ visible, setVisible }) {
     const [meta, setMeta] = useState("");
     const [programa, setPrograma] = useState("");
     const [avanceFisico, setAvanceFisico] = useState("");
-
+    const [avanceFinanciero, setAvanceFinanciero] = useState("");
 
 
     //para asignar las localidades
@@ -57,7 +57,8 @@ export default function Nuevo({ visible, setVisible }) {
                 plantelEducativo: plantel.trim(),
                 programa: programa.toUpperCase(),
                 region: region ? region.trim() : "",
-                avanceFisico: avanceFisico ? avanceFisico.trim() : ""
+                avanceFisico: avanceFisico,
+                avanceFinanciero: avanceFinanciero,
             });
 
             setLoading(false);
@@ -202,7 +203,15 @@ export default function Nuevo({ visible, setVisible }) {
                     <Col md="6">
                         <FormGroup>
                             <label>Avance Físico</label>
-                            <Input size="large" style={{ width: "100%" }} value={avanceFisico} onChange={(e) => setAvanceFisico(e.target.value)} />
+                            <Input size="large" style={{ width: "100%" }} type="number" value={avanceFisico} onChange={(e) => setAvanceFisico(e.target.value)} />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <FormGroup>
+                            <label>Avance Financiero</label>
+                            <Input size="large" style={{ width: "100%" }} type="number" value={avanceFinanciero} onChange={(e) => setAvanceFinanciero(e.target.value)} />
                         </FormGroup>
                     </Col>
                 </Row>
