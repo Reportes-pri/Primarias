@@ -202,7 +202,7 @@ export default function Nuevo({ visible, setVisible }) {
                     </Col>
                     <Col md="6">
                         <FormGroup>
-                            <label>Avance Físico</label>
+                            <label>A Fís</label>
                             <Input size="large" style={{ width: "100%" }} type="number" value={avanceFisico} onChange={(e) => setAvanceFisico(e.target.value)} />
                         </FormGroup>
                     </Col>
@@ -210,7 +210,7 @@ export default function Nuevo({ visible, setVisible }) {
                 <Row>
                     <Col>
                         <FormGroup>
-                            <label>Avance Financiero</label>
+                            <label>A Finan</label>
                             <Input size="large" style={{ width: "100%" }} type="number" value={avanceFinanciero} onChange={(e) => setAvanceFinanciero(e.target.value)} />
                         </FormGroup>
                     </Col>

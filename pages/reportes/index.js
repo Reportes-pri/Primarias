@@ -19,6 +19,7 @@ export default function Index() {
     const [datos, setDatos] = useState(null);
     const [escuelas, setEscuelas] = useState(0);
     const [alumnos, setAlumnos] = useState(0);
+    const [iq, setIq] = useState(0);
 
     const [visibilidadModal, setVisibilidadModal] = useState(false);
 
@@ -69,13 +70,13 @@ export default function Index() {
 
                 <ModalNuevo visible={visibilidadModal} setVisible={setVisibilidadModal} />
 
-                <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} />
+                <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} setIq={setIq} iq= {iq} />
 
                 {escuelas > 0 &&
                     <Row className="mt-5">
                         <Col md="6">
                             <p>
-                                Se muestran {escuelas} escuelas, con un total aproximado de {alumnos} Alumnos.
+                                Se muestran {escuelas} escuelas, con un total aproximado de {alumnos} Alumnos, iq de {iq}
                                 </p>
                         </Col>
 

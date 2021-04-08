@@ -9,7 +9,7 @@ import municipiosGuerrero from "../datos/municipios.json";
 
 const { Option } = Select;
 
-export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
+export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
 
     const [loading, setLoading] = useState(false);
 
@@ -19,7 +19,8 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
     const [localidad, setLocalidad] = useState(null);
     const [nivel, setNivel] = useState(null);
     const [programa, setPrograma] = useState(null);
-    const [plantelEducativo, setplantelEducativo] = useState(null);
+    const [plantelEducativo, setplantelEducativo] = useState("");
+    
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -35,6 +36,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
            
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
+                
             } else if (plantelEducativo !== "") {
                 snapshot = await ref.where("plantelEducativo", "==", plantelEducativo).get();
             }
@@ -148,18 +150,23 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos }) {
                 setDatos([]);
                 setEscuelas(0);
                 setAlumnos(0);
+                setIq(0);
                 alert("No se encontraron registros");
             }
             else {
                 setDatos(snapshot);
                 var escuelas = 0;
                 var alumnos = 0;
+                var iq = 0;
 
                 snapshot.forEach(doc => {
                     alumnos += doc.data().alumnos !== "" ? parseInt(doc.data().alumnos) : 0;
                     setAlumnos(alumnos);
                     escuelas += 1;
                     setEscuelas(escuelas)
+                    iq += doc.data().iq !== "" ? parseFloat(doc.data().iq) : 0;
+                    setIq(iq);
+                    
                 });
             }
 
