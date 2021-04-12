@@ -98,7 +98,7 @@ export default function ModalActualizar({ visible, setVisible, datos }) {
 
     return (
         <Modal
-            title="Nuevo registro"
+            title="Actualizar registro"
             visible={visible}
             onOk={guardar}
             okText="Guardar"

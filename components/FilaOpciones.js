@@ -1,5 +1,7 @@
 import { useState } from "react"
 import ModalActualizar from "./ModalActualizar"
+import { EditOutlined } from '@ant-design/icons';
+import {Button} from "antd";
 
 export default function FilaOpciones({ doc }) {
 
@@ -8,7 +10,7 @@ export default function FilaOpciones({ doc }) {
     return (
         <td style={{ textAlign: "center" }}>
             <ModalActualizar datos={doc} visible={visible} setVisible={setVisible} />
-            <label onClick={() => setVisible(!visible)}>Editar</label>
+            <Button type="primary" shape="circle" icon={<EditOutlined />} size="large" onClick={() => setVisible(!visible)} />
         </td>
     )
 };
