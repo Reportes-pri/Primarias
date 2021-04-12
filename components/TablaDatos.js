@@ -1,8 +1,11 @@
+import FilaOpciones from "./FilaOpciones";
 
 export default function TablaDatos({ datos }) {
 
     return (
-        <div style={{overflowY: "auto"}}>
+        <div style={{ overflowY: "auto" }}>
+
+
             <table className="table  table-striped" style={{ width: "100%" }} id="tblDatos">
                 <thead style={{ textAlign: "center", backgroundColor: "#007bff", color: "white" }}>
                     <tr>
@@ -20,14 +23,14 @@ export default function TablaDatos({ datos }) {
                         <th>PROGRAMA</th>
                         <th>AVANCE FÍSICO</th>
                         <th>AVANCE FINANCIERO</th>
-                    
+                        <th>OPCIONES</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         datos !== null && datos.docs && datos.docs.map((doc, id) => {
                             return (
-                                <tr key={id} >
+                                <tr key={id}>
                                     <td style={{ textAlign: "center" }} >{id + 1}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().anhio}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().region}</td>
@@ -42,7 +45,7 @@ export default function TablaDatos({ datos }) {
                                     <td style={{ textAlign: "center" }}>{doc.data().programa}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().avanceFisico}</td>
                                     <td style={{ textAlign: "center" }}>{doc.data().avanceFinanciero}</td>
-                                  
+                                    <FilaOpciones doc={doc} />
                                 </tr>
                             );
                         })
