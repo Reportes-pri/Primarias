@@ -28,6 +28,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
 
     const consultarDatos = async (e) => {
         try {
+            setDatos(null);
             e.preventDefault();
             setLoading(true);
             const ref = db.collection("escuelas");
@@ -166,7 +167,6 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                     setEscuelas(escuelas)
                     iq += doc.data().iq !== "" ? parseFloat(doc.data().iq) : 0;
                     setIq(iq);
-                    
                 });
             }
 

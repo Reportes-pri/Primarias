@@ -34,7 +34,7 @@ export default function ModalActualizar({ visible, setVisible, datos }) {
     const [valorLoca, setValorLoca] = useState(datos && datos.data().municipio ? localidadesGuerrero.find((element) => element.nombreLocalidad.toUpperCase() === datos.data().localidad) : null);
     const [localidad, setLocalidad] = useState(valorLoca ? valorLoca.nombreLocalidad : null);
     const [meta, setMeta] = useState(datos && datos.data().meta ? datos.data().meta : "");
-    const [programa, setPrograma] = useState(datos && datos.data().meta ? datos.data().meta : "");
+    const [programa, setPrograma] = useState(datos && datos.data().programa ? datos.data().programa : "");
     const [avanceFisico, setAvanceFisico] = useState(datos && datos.data().avanceFisico ? datos.data().avanceFisico : "");
     const [avanceFinanciero, setAvanceFinanciero] = useState(datos && datos.data().avanceFinanciero ? datos.data().avanceFinanciero : "");
 
