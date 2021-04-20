@@ -39,9 +39,6 @@ export default function Nuevo({ visible, setVisible }) {
 
     const guardar = async () => {
 
-        //console.log(anio, region, cct, plantel, alumnos, nivelEducativo, iq, municipio, localidad, meta, programa);
-
-        //return
         try {
             setLoading(true);
 
@@ -65,6 +62,8 @@ export default function Nuevo({ visible, setVisible }) {
 
             message.success('Guardado correctamente');
 
+            limpiar();
+
         } catch (error) {
             setLoading(false);
             message.error("Ocurrió un error contacte al administrador");
@@ -73,7 +72,21 @@ export default function Nuevo({ visible, setVisible }) {
 
 
     const limpiar = () => {
-
+        setAnio("");
+        setRegion(null);
+        setCct("");
+        setPlantel("");
+        setAlumnos("");
+        setNivelEducativo("");
+        setIq("");
+        setMunicipio("");
+        setLocalidad("");
+        setMeta("");
+        setPrograma("");
+        setAvanceFisico("");
+        setAvanceFinanciero("");
+        setLocalidades(localidadesGuerrero);
+        setMunicipios(municipiosGuerrero);
     }
 
     const cambiarRegion = (e) => {
