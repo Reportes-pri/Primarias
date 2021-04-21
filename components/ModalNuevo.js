@@ -85,8 +85,8 @@ export default function Nuevo({ visible, setVisible }) {
         setPrograma("");
         setAvanceFisico("");
         setAvanceFinanciero("");
-        setLocalidades(localidadesGuerrero);
-        setMunicipios(municipiosGuerrero);
+        //setLocalidades(localidadesGuerrero);
+        //setMunicipios(municipiosGuerrero);
     }
 
     const cambiarRegion = (e) => {

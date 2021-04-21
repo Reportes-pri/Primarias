@@ -70,13 +70,13 @@ export default function Index() {
 
                 <ModalNuevo visible={visibilidadModal} setVisible={setVisibilidadModal} />
 
-                <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} setIq={setIq} iq= {iq} />
+                <Filtro setDatos={setDatos} setEscuelas={setEscuelas} setAlumnos={setAlumnos} alumnos={alumnos} escuelas={escuelas} setIq={setIq} iq={iq} />
 
                 {escuelas > 0 &&
                     <Row className="mt-5">
                         <Col md="6">
                             <p>
-                                Se muestran {escuelas} escuelas, con un total aproximado de {alumnos} Alumnos, iq de {iq}
+                                Escuelas: {escuelas} , total de alumnos: {alumnos} , Iq: {iq}
                                 </p>
                         </Col>
 

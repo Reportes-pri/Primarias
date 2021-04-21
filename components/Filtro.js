@@ -284,9 +284,9 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             onChange={(e) => setPrograma(e)}
                             value={programa}
                         >
-                            <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">INFE</Option>
-                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">FAM</Option>
-
+                            <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">CIEN MANTENIMIENTO</Option>
+                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">CIEN</Option>
+                            <Option value="FAM POTENCIADO  RENDIMIENTOS FINANCIEROS GENERADOS">CIEN RENDIMIENTOS</Option>
                         </Select>
                     </FormGroup>
                 </Col>
