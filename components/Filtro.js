@@ -20,7 +20,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
     const [nivel, setNivel] = useState(null);
     const [programa, setPrograma] = useState(null);
     const [plantelEducativo, setplantelEducativo] = useState("");
-    
+
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -34,12 +34,17 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
             const ref = db.collection("escuelas");
 
             var snapshot;
-           
+
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
-                
+                if (snapshot.empty) {
+                    snapshot = await ref.where("cctMayusculas", "==", cct.toUpperCase().trim()).get();
+                }
             } else if (plantelEducativo !== "") {
                 snapshot = await ref.where("plantelEducativo", "==", plantelEducativo).get();
+                if (snapshot.empty) {
+                    snapshot = await ref.where("plantelEducativoMayusculas", "==", plantelEducativo.toUpperCase().trim()).get();
+                }
             }
             else if (region !== null && municipio !== null && localidad !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 5 casos */
@@ -284,9 +289,9 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             onChange={(e) => setPrograma(e)}
                             value={programa}
                         >
-                            <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">INFE</Option>
-                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">FAM</Option>
-
+                            <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">CIEN MANTENIMIENTO</Option>
+                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">CIEN</Option>
+                            <Option value="FAM POTENCIADO  RENDIMIENTOS FINANCIEROS GENERADOS">CIEN RENDIMIENTOS</Option>
                         </Select>
                     </FormGroup>
                 </Col>
@@ -297,7 +302,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                     </FormGroup>
                 </Col>
 
-                
+
             </Row>
             <Row>
 

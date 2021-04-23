@@ -30,7 +30,7 @@ export default function ModalActualizar({ visible, setVisible, datos }) {
     const [alumnos, setAlumnos] = useState(datos && datos.data().alumnos ? datos.data().alumnos : "");
     const [nivelEducativo, setNivelEducativo] = useState(datos && datos.data().nivelEducativo ? datos.data().nivelEducativo : "");
     const [iq, setIq] = useState(datos && datos.data().iq ? datos.data().iq : "");
-    const [municipio, setMunicipio] = useState(valorMuni ? valorMuni.clave : null);
+    const [municipio, setMunicipio] = useState(valorMuni ? valorMuni.nombre : null);
     const [valorLoca, setValorLoca] = useState(datos && datos.data().municipio ? localidadesGuerrero.find((element) => element.nombreLocalidad.toUpperCase() === datos.data().localidad) : null);
     const [localidad, setLocalidad] = useState(valorLoca ? valorLoca.nombreLocalidad : null);
     const [meta, setMeta] = useState(datos && datos.data().meta ? datos.data().meta : "");
@@ -66,12 +66,14 @@ export default function ModalActualizar({ visible, setVisible, datos }) {
                 alumnos: alumnos,
                 anhio: anio,
                 cct: cct.trim(),
+                cctMayusculas: cct.toLocaleUpperCase().trim(),
                 iq: iq,
                 localidad: localidad ? localidad.toUpperCase().trim() : "",
                 meta: meta.toUpperCase(),
                 municipio: municipio ? municipio.toUpperCase().trim() : "",
                 nivelEducativo: nivelEducativo.trim(),
                 plantelEducativo: plantel.trim(),
+                plantelEducativoMayusculas: plantel.toUpperCase().trim(),
                 programa: programa.toUpperCase(),
                 region: region ? region.trim() : "",
                 avanceFisico: avanceFisico,
