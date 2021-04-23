@@ -243,7 +243,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             <Option value="Costa Grande">Costa Grande</Option>
                             <Option value="Centro">Centro</Option>
                             <Option value="Norte">Norte</Option>
-                            <Option value="La Montaña">Montaña</Option>
+                            <Option value="Montaña">Montaña</Option>
                             <Option value="Tierra Caliente">Tierra Caliente</Option>
                         </Select>
                     </FormGroup>
