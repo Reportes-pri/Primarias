@@ -20,7 +20,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
     const [nivel, setNivel] = useState(null);
     const [programa, setPrograma] = useState(null);
     const [plantelEducativo, setplantelEducativo] = useState("");
-
+    
 
     //para asignar las localidades
     const [localidades, setLocalidades] = useState(localidadesGuerrero);
@@ -34,12 +34,12 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
             const ref = db.collection("escuelas");
 
             var snapshot;
-
+           
             if (cct !== "") {
                 snapshot = await ref.where("cct", "==", cct).get();
                 if (snapshot.empty) {
                     snapshot = await ref.where("cctMayusculas", "==", cct.toUpperCase().trim()).get();
-                }
+                }                
             } else if (plantelEducativo !== "") {
                 snapshot = await ref.where("plantelEducativo", "==", plantelEducativo).get();
                 if (snapshot.empty) {
@@ -48,20 +48,20 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
             }
             else if (region !== null && municipio !== null && localidad !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 5 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             }
             else if (region !== null && municipio !== null && localidad !== null && nivel !== null) {
                 /** Combinacion para 4 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             } else if (region !== null && municipio !== null && localidad !== null && programa !== null) {
                 /** Combinacion para 4 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             } else if (region !== null && municipio !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 4 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             } else if (region !== null && localidad !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 4 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
             } else if (municipio !== null && localidad !== null && nivel !== null && programa !== null) {
                 /** Combinacion para 4 casos */
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
@@ -69,14 +69,14 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
 
             else if (region !== null && municipio !== null && localidad !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("localidad", "==", localidad.toUpperCase()).get();
             }
             else if (municipio !== null && region !== null && nivel !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).get();
             } else if (municipio !== null && region !== null && programa !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).where("programa", "==", programa.toUpperCase()).get();
             } else if (municipio !== null && localidad !== null && nivel !== null) {
                 /*combinaciones para 3 casos */
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
@@ -88,20 +88,20 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             } else if (region !== null && localidad !== null && nivel !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
             } else if (region !== null && localidad !== null && programa !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("localidad", "==", localidad.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             } else if (region !== null && nivel !== null && programa !== null) {
                 /*combinaciones para 3 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             } else if (localidad !== null && nivel !== null && programa !== null) {
                 /*combinaciones para 3 casos */
                 snapshot = await ref.where("localidad", "==", localidad.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             }
             else if (region !== null && municipio !== null) {
                 /*combinaciones para 2 casos */
-                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region.toUpperCase()).get();
+                snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("region", "==", region).get();
             }
             else if (localidad !== null && municipio !== null) {
                 /** Combinaciones para 2 casos */
@@ -109,7 +109,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
             }
             else if (localidad !== null && region !== null) {
                 /** Combinaciones para 2 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("localidad", "==", localidad.toUpperCase()).get();
             } else if (municipio !== null && nivel !== null) {
                 /** Combinaciones para 2 casos */
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
@@ -118,10 +118,10 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             } else if (region !== null && nivel !== null) {
                 /** Combinaciones para 2 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("nivelEducativo", "==", nivel.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("nivelEducativo", "==", nivel.toUpperCase()).get();
             } else if (programa !== null && region !== null) {
                 /** Combinaciones para 2 casos */
-                snapshot = await ref.where("region", "==", region.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).where("programa", "==", programa.toUpperCase()).get();
             } else if (localidad !== null && nivel !== null) {
                 /** Combinaciones para 2 casos */
                 snapshot = await ref.where("nivelEducativo", "==", nivel.toUpperCase()).where("localidad", "==", localidad.toUpperCase()).get();
@@ -133,7 +133,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                 snapshot = await ref.where("nivelEducativo", "==", nivel.toUpperCase()).where("programa", "==", programa.toUpperCase()).get();
             }
             else if (region !== null) {
-                snapshot = await ref.where("region", "==", region.toUpperCase()).get();
+                snapshot = await ref.where("region", "==", region).get();
             }
             else if (municipio !== null) {
                 snapshot = await ref.where("municipio", "==", municipio.toUpperCase()).get();
@@ -302,7 +302,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                     </FormGroup>
                 </Col>
 
-
+                
             </Row>
             <Row>
 
