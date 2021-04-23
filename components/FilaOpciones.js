@@ -21,7 +21,7 @@ export default function FilaOpciones({ doc }) {
         });
     }
 
-    const eliminar = (e) => {
+    const eliminar = () => {
         db.collection("escuelas").doc(doc.id).delete().then(() => {
             message.success("Eliminado correctamente");
         }).catch((error) => {
