@@ -161,19 +161,18 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
             }
             else {
                 setDatos(snapshot);
-                var escuelas = 0;
+                setEscuelas(snapshot.size);
+
                 var alumnos = 0;
                 var iq = 0;
 
-                await snapshot.forEach(function(doc) {
-                    console.log(doc.data().alumnos);
+                snapshot.forEach((doc) => {
+                    // doc.data() is never undefined for query doc snapshots
                     alumnos += doc.data().alumnos !== "" ? parseInt(doc.data().alumnos) : 0;
-                    escuelas += 1;
                     iq += doc.data().iq !== "" ? parseFloat(doc.data().iq) : 0;
                 });
 
                 setAlumnos(alumnos);
-                setEscuelas(escuelas)
                 setIq(iq);
             }
 
