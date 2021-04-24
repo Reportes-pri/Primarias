@@ -165,14 +165,16 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                 var alumnos = 0;
                 var iq = 0;
 
-                snapshot.forEach(doc => {
+                await snapshot.forEach(function(doc) {
+                    console.log(doc.data().alumnos);
                     alumnos += doc.data().alumnos !== "" ? parseInt(doc.data().alumnos) : 0;
-                    setAlumnos(alumnos);
                     escuelas += 1;
-                    setEscuelas(escuelas)
                     iq += doc.data().iq !== "" ? parseFloat(doc.data().iq) : 0;
-                    setIq(iq);
                 });
+
+                setAlumnos(alumnos);
+                setEscuelas(escuelas)
+                setIq(iq);
             }
 
             setCct("");
@@ -290,7 +292,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             value={programa}
                         >
                             <Option value="RECURSOS PARA EL MANTENIMIENTO DE LOS PROYECTOS DE LA INFE">CIEN MANTENIMIENTO</Option>
-                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">CIEN</Option>
+                            <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">CIEN        </Option>
                             <Option value="FAM POTENCIADO  RENDIMIENTOS FINANCIEROS GENERADOS">CIEN RENDIMIENTOS</Option>
                         </Select>
                     </FormGroup>
@@ -301,13 +303,6 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                         <Button size="large" type="primary" className="float-right" onClick={consultarDatos}>Buscar {loading && <Spinner color="white" size="sm" className="ml-2" />} </Button>
                     </FormGroup>
                 </Col>
-
-                
-            </Row>
-            <Row>
-
-
-
             </Row>
         </div>
     )
