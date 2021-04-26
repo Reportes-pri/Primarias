@@ -46,14 +46,12 @@ export default function Nuevo({ visible, setVisible }) {
                 alumnos: alumnos,
                 anhio: anio,
                 cct: cct.trim(),
-                cctMayusculas: cct.toLocaleUpperCase().trim(),
                 iq: iq,
                 localidad: localidad ? localidad.toUpperCase().trim() : "",
                 meta: meta.toUpperCase(),
                 municipio: municipio ? municipio.toUpperCase().trim() : "",
                 nivelEducativo: nivelEducativo.trim(),
                 plantelEducativo: plantel.trim(),
-                plantelEducativoMayusculas: plantel.toUpperCase().trim(),
                 programa: programa.toUpperCase(),
                 region: region ? region.trim() : "",
                 avanceFisico: avanceFisico,
@@ -87,8 +85,8 @@ export default function Nuevo({ visible, setVisible }) {
         setPrograma("");
         setAvanceFisico("");
         setAvanceFinanciero("");
-        //setLocalidades(localidadesGuerrero);
-        //setMunicipios(municipiosGuerrero);
+        setLocalidades(localidadesGuerrero);
+        setMunicipios(municipiosGuerrero);
     }
 
     const cambiarRegion = (e) => {
@@ -174,7 +172,7 @@ export default function Nuevo({ visible, setVisible }) {
                                 <Option value="Costa Grande">Costa Grande</Option>
                                 <Option value="Centro">Centro</Option>
                                 <Option value="Norte">Norte</Option>
-                                <Option value="La Montaña">Montaña</Option>
+                                <Option value="Montaña">Montaña</Option>
                                 <Option value="Tierra Caliente">Tierra Caliente</Option>
                             </Select>
                         </FormGroup>

@@ -16,12 +16,12 @@
     {
         "clave": "4",
         "nombre": "Alcozauca de Guerrero",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "5",
         "nombre": "Alpoyeca",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "6",
@@ -41,12 +41,12 @@
     {
         "clave": "9",
         "nombre": "Atlamajalcingo del Monte",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "10",
         "nombre": "Atlixtac",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "11",
@@ -96,7 +96,7 @@
     {
         "clave": "20",
         "nombre": "Copanatoyac",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "21",
@@ -116,7 +116,7 @@
     {
         "clave": "24",
         "nombre": "Cualác",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "25",
@@ -161,7 +161,7 @@
     {
         "clave": "33",
         "nombre": "Huamuxtitlán",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "34",
@@ -201,7 +201,7 @@
     {
         "clave": "41",
         "nombre": "Malinaltepec",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "42",
@@ -211,7 +211,7 @@
     {
         "clave": "43",
         "nombre": "Metlatónoc",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "44",
@@ -221,7 +221,7 @@
     {
         "clave": "45",
         "nombre": "Olinalá",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "46",
@@ -311,7 +311,7 @@
     {
         "clave": "63",
         "nombre": "Tlacoapa",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "64",
@@ -321,12 +321,12 @@
     {
         "clave": "65",
         "nombre": "Tlalixtaquilla de Maldonado",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "66",
         "nombre": "Tlapa de Comonfort",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "67",
@@ -341,12 +341,12 @@
     {
         "clave": "69",
         "nombre": "Xalpatláhuac",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "70",
         "nombre": "Xochihuehuetlán",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "71",
@@ -356,7 +356,7 @@
     {
         "clave": "72",
         "nombre": "Zapotitlán Tablas",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "73",
@@ -376,7 +376,7 @@
     {
         "clave": "76",
         "nombre": "Acatepec",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "77",
@@ -386,7 +386,7 @@
     {
         "clave": "78",
         "nombre": "Cochoapa el Grande",
-        "region": "Montaña"
+        "region": "La Montaña"
     },
     {
         "clave": "79",
@@ -401,6 +401,6 @@
     {
         "clave": "81",
         "nombre": "Iliatenco",
-        "region": "Montaña"
+        "region": "La Montaña"
     }
 ]
