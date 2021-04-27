@@ -294,14 +294,14 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             <Option value="PROGRAMA PARA LA POTENCIACIÓN DE LOS RECURSOS DE APORTACIÓN FAM">CIEN        </Option>
                             <Option value="FAM POTENCIADO  RENDIMIENTOS FINANCIEROS GENERADOS">CIEN RENDIMIENTOS</Option>
                             <Option value="FAM BÁSICO 2021">FAM BÁSICO 2021</Option>
-                            <Option value="FAM BÁSICO 2020 REMANENTES">FAM BÁSICO 2020 REMANENTES</Option>
+                            <Option value="FAM BÁSICO 2020 REMANENTES">FAM BÁSICO 2020 REM</Option>
                             <Option value="FAM BÁSICO 2020 REMAN. (REND. FINAN.)">FAM BÁSICO 2020 REMAN. (REND. FINAN.)</Option>
                             <Option value="FAM MEDIA SUPERIOR 2020 (REND. FINAN.)">FAM MEDIA SUPERIOR 2020 (REND. FINAN.)</Option>
                             <Option value="FAM MEDIA SUPERIOR 2020 REMAN. (REND. FINAN.)">FAM MEDIA SUPERIOR 2020 REM.(REND. FINAN.)</Option>
-                            <Option value="FAM MEDIA SUPERIOR 2020 REMANENTES">FAM MEDIA SUPERIOR 2020 REMANENTES</Option>
+                            <Option value="FAM MEDIA SUPERIOR 2020 REMANENTES">FAM MEDIA SUPERIOR 2020 REM</Option>
                             <Option value="FAM MEDIA SUPERIOR 2021">FAM MEDIA SUPERIOR 2021</Option>
                             <Option value="FAM SUPERIOR 2020 REMAN. (REND. FINAN.)">FAM SUPERIOR 2020 REMAN.(REND. FINAN.)</Option>
-                            <Option value="FAM SUPERIOR 2020 REMANENTES">FAM SUPERIOR 2020 REMANENTES</Option>
+                            <Option value="FAM SUPERIOR 2020 REMANENTES">FAM SUPERIOR 2020 REM</Option>
                             <Option value="FAM SUPERIOR 2021">FAM SUPERIOR 2021</Option>
                             <Option value="FISE 2021">FISE 2021</Option>
 
