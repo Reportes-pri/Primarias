@@ -77,7 +77,7 @@ export default function Index() {
                         <Col md="6">
                             <p>
                                 Escuelas: {escuelas} , total de alumnos: {alumnos} , Iq: {iq}
-                                </p>
+                            </p>
                         </Col>
 
                         <Col >
@@ -93,10 +93,7 @@ export default function Index() {
                                     buttonText="Exportar a Excel"
                                 />
                             </div>
-
-
                         </Col>
-
                     </Row>
                 }
 

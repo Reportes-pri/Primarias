@@ -79,8 +79,8 @@ export default function Nuevo({ visible, setVisible }) {
         setAlumnos("");
         setNivelEducativo("");
         setIq("");
-        setMunicipio("");
-        setLocalidad("");
+        setMunicipio(null);
+        setLocalidad(null);
         setMeta("");
         setPrograma("");
         setAvanceFisico("");
@@ -186,13 +186,13 @@ export default function Nuevo({ visible, setVisible }) {
                     <Col md="6">
                         <FormGroup>
                             <label>Municipio</label>
-                            <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipios={municipios} />
+                            <SelectMunicipio setMunicipio={setMunicipio} setLocalidades={setLocalidades} municipios={municipios} municipio={municipio} />
                         </FormGroup>
                     </Col>
                     <Col md="6">
                         <FormGroup>
                             <label>Localidad</label>
-                            <SelectLocalidad localidades={localidades} setLocalidad={setLocalidad} />
+                            <SelectLocalidad localidades={localidades} setLocalidad={setLocalidad} localidad={localidad} />
                         </FormGroup>
                     </Col>
                 </Row>

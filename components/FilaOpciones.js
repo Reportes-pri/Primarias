@@ -21,7 +21,7 @@ export default function FilaOpciones({ doc }) {
         });
     }
 
-    const eliminar = (e) => {
+    const eliminar = () => {
         db.collection("escuelas").doc(doc.id).delete().then(() => {
             message.success("Eliminado correctamente");
         }).catch((error) => {
@@ -31,7 +31,7 @@ export default function FilaOpciones({ doc }) {
     }
 
     return (
-        <td style={{ textAlign: "center" }}>
+        <td style={{ textAlign: "center", display: "inline-table" }}>
             <ModalActualizar datos={doc} visible={visible} setVisible={setVisible} />
             <Button type="primary" shape="circle" icon={<EditOutlined />} size="large" onClick={() => setVisible(!visible)} />
             <Button type="primary" danger shape="circle" icon={<DeleteOutlined />} size="large" onClick={confirm} />
