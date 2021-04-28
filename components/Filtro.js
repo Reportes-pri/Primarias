@@ -303,7 +303,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                             <Option value="FAM SUPERIOR 2020 REMAN. (REND. FINAN.)">FAM SUPERIOR 2020 REMAN.(REND. FINAN.)</Option>
                             <Option value="FAM SUPERIOR 2020 REMANENTES">FAM SUPERIOR 2020 REM</Option>
                             <Option value="FAM SUPERIOR 2021">FAM SUPERIOR 2021</Option>
-                            <Option value="FISE 2021">FISE 2021</Option>
+                            <Option value="FISE 2021">FISE 2021.</Option>
 
                             
                         </Select>
