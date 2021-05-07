@@ -173,7 +173,7 @@ export default function Filtro({ setDatos, setEscuelas, setAlumnos, setIq }) {
                 });
 
                 setAlumnos(alumnos);
-                setIq(iq);
+                setIq(iq.toFixed(2));
             }
 
             setCct("");
