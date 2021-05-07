@@ -56,6 +56,20 @@ export default function Index() {
         doc.save('Reportes.pdf')
     }
 
+    function imprimirPdf()
+    {
+        var myWindow = window.open('', 'PRINT', 'height=400, width=600');
+        myWindow.document.write('<html><head><title> Reportes </title>');
+        myWindow.document.write('</head><body>');
+        myWindow.document.write(document.getElementById('tblReportes').innerHTML);
+        myWindow.document.write('</body></html>');
+
+        myWindow.document.close();
+        myWindow.focus();
+        myWindow.print();
+        myWindow.close();
+    }
+
     return (
         <Layout>
             <PageHeader
@@ -94,6 +108,7 @@ export default function Index() {
                                 />
                             </div>
                         </Col>
+                        <Col><button className="btn btn-warning " onClick={imprimirPdf}>Imprimir</button></Col>
                     </Row>
                 }
 
