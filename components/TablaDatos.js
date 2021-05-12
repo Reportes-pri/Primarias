@@ -1,6 +1,8 @@
+
+
 import FilaOpciones from "./FilaOpciones";
 
-export default function TablaDatos({ datos }) {
+export default function TablaDatos({ datos, estadoColumnas }) {
 
     return (
         <div style={{ overflowY: "auto" }}>
@@ -23,7 +25,11 @@ export default function TablaDatos({ datos }) {
                             <th>PROGRAMA</th>
                             <th>AVANCE FÍSICO</th>
                             <th>AVANCE FINANCIERO</th>
-                            <th>OPCIONES</th>
+                            {
+                                estadoColumnas !== 1 &&
+                                <th>OPCIONES</th>
+                            }
+
                         </tr>
                     </thead>
                     <tbody>
@@ -45,7 +51,10 @@ export default function TablaDatos({ datos }) {
                                         <td style={{ textAlign: "center" }}>{doc.data().programa}</td>
                                         <td style={{ textAlign: "center" }}>{doc.data().avanceFisico}</td>
                                         <td style={{ textAlign: "center" }}>{doc.data().avanceFinanciero}</td>
-                                        <FilaOpciones doc={doc} />
+                                        {
+                                            estadoColumnas !== 1 &&
+                                            <FilaOpciones doc={doc} />
+                                        }
                                     </tr>
                                 );
                             })
@@ -56,3 +65,6 @@ export default function TablaDatos({ datos }) {
         </div>
     );
 }
+
+
+

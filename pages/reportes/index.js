@@ -20,6 +20,8 @@ export default function Index() {
     const [escuelas, setEscuelas] = useState(0);
     const [alumnos, setAlumnos] = useState(0);
     const [iq, setIq] = useState(0);
+    const [estadoColumnas, setEstadoColumnas] = useState(0);
+    const [activarSpinner, setActivarSpinner] = useState(false);
 
     const [visibilidadModal, setVisibilidadModal] = useState(false);
 
@@ -44,20 +46,29 @@ export default function Index() {
         )
     }
 
-    function crearPdf() {
-        const doc = new jsPDF('landscape');
 
-        autoTable(doc, {
-            html: '#tblDatos', styles: {
-                overflow: 'linebreak',
-                fontSize: 8
-            },
-        });
-        doc.save('Reportes.pdf')
+    function crearPdf() {
+        setEstadoColumnas(1);
+        setActivarSpinner(true);
+        <Spinner />
+        setTimeout(() => {
+            const doc = new jsPDF('landscape');
+            autoTable(doc, {
+                html: '#tblDatos', styles: {
+                    overflow: 'linebreak',
+                    fontSize: 8
+                },
+            });
+            doc.save('Reportes.pdf')
+            setEstadoColumnas(0);
+            setActivarSpinner(false);
+        }, 10);
+
     }
 
-    function imprimirPdf()
-    {
+    function imprimirPdf() {
+        setEstadoColumnas(1);
+
         var myWindow = window.open('', 'PRINT', 'height=400, width=600');
         myWindow.document.write('<html><head><title> Reportes </title>');
         myWindow.document.write('</head><body>');
@@ -68,6 +79,7 @@ export default function Index() {
         myWindow.focus();
         myWindow.print();
         myWindow.close();
+        setEstadoColumnas(0);
     }
 
     return (
@@ -96,7 +108,13 @@ export default function Index() {
 
                         <Col >
                             <div className="float-right">
-                                <button className="btn btn-danger " onClick={crearPdf}>Exportar a PDF</button>
+                                <button className="btn btn-danger " onClick={crearPdf}>Exportar a PDF
+                                {
+                                        activarSpinner !== false &&
+                                        <Spinner color="white" size="sm" className="ml-2" />
+
+                                    }
+                                </button>
                                   &nbsp; &nbsp;
                             <ReactHTMLTableToExcel
                                     id="test-table-xls-button"
@@ -114,7 +132,7 @@ export default function Index() {
 
                 <Row className="mt-5">
                     <Col md="12" className="table-responsive">
-                        <TablaDatos datos={datos} />
+                        <TablaDatos datos={datos} estadoColumnas={estadoColumnas} />
                     </Col>
                 </Row>
 
@@ -122,3 +140,7 @@ export default function Index() {
         </Layout>
     )
 }
+
+
+
+
